@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=GitLab Issues
+Comment=Lists the most recent issues for a GitLab repository.
+
+Type=Service
+Icon=octicon-mark-github.svg
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/Main.qml
+
+X-KDE-PluginInfo-Author=Chris Holland
+X-KDE-PluginInfo-Email=zrenfire@gmail.com
+X-KDE-PluginInfo-Name=com.github.zren.gitlabissues
+X-KDE-PluginInfo-Version=2
+X-KDE-PluginInfo-Website=https://github.com/Zren/plasma-applet-gitlabissues
+X-KDE-PluginInfo-Category=Online Services

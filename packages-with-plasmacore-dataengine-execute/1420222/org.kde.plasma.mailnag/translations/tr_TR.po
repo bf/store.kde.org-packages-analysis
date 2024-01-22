@@ -1,0 +1,333 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Юрий <dr@i-glu4it.ru>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://i-glu4it.ru\n"
+"POT-Creation-Date: 2020-09-08 19:08+0300\n"
+"PO-Revision-Date: 2020-01-28 16:17+0300\n"
+"Last-Translator: \n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Language: ru_RU\n"
+"X-Source-Language: C\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Genel"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Update interval"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "min"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Show notification"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Play sound"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Check Email"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Mark all as read"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Open Email client"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have a new mail"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "From:"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Subject:"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have %1 unread emails."
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have no unread emails."
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Mark as read"
+msgstr ""
+
+#~ msgid "Import/Export"
+#~ msgstr "İçe aktar/Dışa aktar"
+
+#~ msgid "Appearance"
+#~ msgstr "Görünüm"
+
+#~ msgid "Search"
+#~ msgstr "Ara"
+
+#~ msgid "Attention! Configuration changes immediately.<br>Use with caution."
+#~ msgstr "Dikkat! Yapılandırmalar hemen değişir."
+
+#~ msgid "Copy"
+#~ msgstr "Kopyala"
+
+#~ msgid "Icon:"
+#~ msgstr "Simge"
+
+#~ msgid "Panel view"
+#~ msgstr "Panel görünümü"
+
+#~ msgid "icon"
+#~ msgstr "simge"
+
+#~ msgid "track name"
+#~ msgstr "parça adı"
+
+#~ msgid "Panel width"
+#~ msgstr "Panel genişliği"
+
+#~ msgid "Disable background for desktop representation"
+#~ msgstr "Masaüstünde göstermek için zemini kaldır"
+
+#~ msgid "Font Color:"
+#~ msgstr "Yazı rengi"
+
+#~ msgid "Choose Icon"
+#~ msgstr "Simge seç"
+
+#~ msgid "Set Default"
+#~ msgstr "Varsayılanı ayarla"
+
+#~ msgid "Copy to clipboard your configuration"
+#~ msgstr "Yapılandırmaları panoya kopyala."
+
+#~ msgid "Configuration are copied to clipboard."
+#~ msgstr "Yapılandırmalar panoya kopyalandı."
+
+#~ msgid "Unlock"
+#~ msgstr "Kilidi aç"
+
+#~ msgid "Lock"
+#~ msgstr "Kilitle"
+
+#~ msgid "Lock configuration"
+#~ msgstr "Yapılandırmaları kilitle."
+
+#~ msgid "Unlock configuration"
+#~ msgstr "Yapılandırmaların kilidini aç."
+
+#~ msgid "Configuration are locked."
+#~ msgstr "Yapılandırmalar kilitlendi."
+
+#~ msgid "Configuration are unlocked!"
+#~ msgstr "Yapılandırmaların kilidi açıldı."
+
+#~ msgid "Paste"
+#~ msgstr "Yapıştır"
+
+#~ msgid "Paste from clipboard to restore configuration"
+#~ msgstr "Yapılandırmaları onarmak için panodan yapıştır."
+
+#~ msgid "Unlock before restore configuration!"
+#~ msgstr "Yapılandırmaları onarmadan önce kilidi aç."
+
+#~ msgid "Configuration are restored."
+#~ msgstr "Yapılandırmalar onarıldı."
+
+#~ msgid "Name"
+#~ msgstr "İsim"
+
+#~ msgid "Add"
+#~ msgstr "Ekle"
+
+#~ msgid "Edit"
+#~ msgstr "Düzenle"
+
+#~ msgid "Remove"
+#~ msgstr "Sil"
+
+#~ msgid "Move up"
+#~ msgstr "Yukarı taşı"
+
+#~ msgid "Move down"
+#~ msgstr "Aşağı taşı"
+
+#~ msgid "Show notification on track change"
+#~ msgstr "Parça değiştiğinde bildirim göster"
+
+#~ msgid "Station"
+#~ msgstr "Radyo kanalı"
+
+#~ msgid "Name:"
+#~ msgstr "İsim:"
+
+#~ msgid "Station URL:"
+#~ msgstr "Kanal adresi"
+
+#~ msgid "Active"
+#~ msgstr "Etkin"
+
+#~ msgid "Advanced Radio Player"
+#~ msgstr "Advanced Radio Player"
+
+#~ msgid "Choose station"
+#~ msgstr "Kanal seç"
+
+#~ msgid "Unknown Artist"
+#~ msgstr "Bilinmeyen şarkıcı"
+
+#~ msgid "Unknown Song"
+#~ msgstr "Bilinmeyen şarkı"
+
+#~ msgid "Buffering"
+#~ msgstr "Arabelleğe alınıyor"
+
+#~ msgid "Choose station and enjoy..."
+#~ msgstr "Kanalını seç ve eğlen!"
+
+#~ msgid "Add stations"
+#~ msgstr "Kanal ekle"
+
+#~ msgid "Bitrate:"
+#~ msgstr "Parça değeri"
+
+#~ msgid "Genre:"
+#~ msgstr "Tarz"
+
+#~ msgid "Clear"
+#~ msgstr "Temizle"
+
+#~ msgid ""
+#~ "Get list of stations\n"
+#~ "Please wait..."
+#~ msgstr ""
+#~ "Kanal listesini al\n"
+#~ "Lütfen bekleyin"
+
+#~ msgid ""
+#~ "Check server status\n"
+#~ "Please wait..."
+#~ msgstr ""
+#~ "Sunucu durumunu denetle\n"
+#~ "Lütfen bekleyin"
+
+#~ msgid "Stop"
+#~ msgstr "Dur"
+
+#~ msgid "Play"
+#~ msgstr "Oynat"
+
+#~ msgid "Add Station"
+#~ msgstr "Kanal ekle"
+
+#~ msgid "Station added. Click 'Apply' to save changes."
+#~ msgstr "Kanal eklendi. Değişiklikleri kaydetmek için Uygula'ya basın."
+
+#~ msgid "Url:"
+#~ msgstr "Adres"
+
+#~ msgid "Codec:"
+#~ msgstr "Ses çözücü"
+
+#~ msgid "Server status:"
+#~ msgstr "Sunucu durumu:"
+
+#~ msgid "Country:"
+#~ msgstr "Ülke"
+
+#~ msgid "Language:"
+#~ msgstr "Dil"
+
+#~ msgid "Tags:"
+#~ msgstr "Etiketler"
+
+#~ msgid "Error"
+#~ msgstr "Hata"
+
+#~ msgid "Unknown"
+#~ msgstr "Bilinmeyen"
+
+#~ msgid "Search by"
+#~ msgstr "Arama kriterleri"
+
+#~ msgid "name"
+#~ msgstr "isim"
+
+#~ msgid "country"
+#~ msgstr "ülke"
+
+#~ msgid "language"
+#~ msgstr "dil"
+
+#~ msgid "tags"
+#~ msgstr "etiketler"
+
+#~ msgid "Volume"
+#~ msgstr "Ses"
+
+#~ msgid "Version: %1"
+#~ msgstr "Versiyon: %1"
+
+#~ msgid "About"
+#~ msgstr "Hakkında"
+
+#~ msgid "License: %0"
+#~ msgstr "Lisans: %0"
+
+#~ msgid "Libraries in use"
+#~ msgstr "Kullanılan kütüphaneler"
+
+#~ msgid "Copyright"
+#~ msgstr "Telif hakkı"
+
+#~ msgid "Author"
+#~ msgstr "Yazar"
+
+#~ msgid "Credits"
+#~ msgstr "Teşekkürler"
+
+#~ msgid "Translators"
+#~ msgstr "Çevirmenler"
+
+#~ msgid "Radio player with editable list of stations"
+#~ msgstr "Düzenlenebilir istasyon listesine sahip radyo çalar"
+
+#~ msgid "fixing errors"
+#~ msgstr "hataları düzeltme"
+
+#~ msgid "idea for search"
+#~ msgstr "arama fikri"
+
+#~ msgid ""
+#~ "If you want to help translate the application into your language<br>or "
+#~ "suggest corrections or new features, write me on dr@i-glu4it.ru."
+#~ msgstr ""
+#~ "Uygulamayı dilinize çevirmek veya düzeltmeler veya yeni "
+#~ "özellikler<br>önermek istiyorsanız, bana dr@i-glu4it.ru adresinden yazın."
+
+#~ msgid ""
+#~ "Nothing found\n"
+#~ "Try changing your query"
+#~ msgstr ""
+#~ "Hiçbir şey\n"
+#~ "Sorgunuzu değiştirmeyi denemedi"

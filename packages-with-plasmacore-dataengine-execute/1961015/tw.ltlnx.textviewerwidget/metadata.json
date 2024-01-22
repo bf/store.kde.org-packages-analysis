@@ -1,0 +1,26 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "ltlnx.tw@gmail.com",
+                "Name": "ltlnx"
+            }
+        ],
+        "Category": "Environment and Weather",
+        "Dependencies": [
+        ],
+        "Description": "Display text from any file in a widget",
+        "EnabledByDefault": true,
+        "Icon": "text-plain",
+        "Id": "tw.ltlnx.textviewerwidget",
+        "License": "MIT",
+        "Name": "Text Viewer Widget",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.2.2",
+        "Website": "https://ltlnx.tw/software/text-viewer-widget.html"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

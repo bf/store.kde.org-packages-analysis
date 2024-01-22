@@ -1,0 +1,114 @@
+# Translation of ecowatt in LANGUAGE
+# Copyright (C) 2022
+# This file is distributed under the same license as the ecowatt package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ecowatt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-14 23:39+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../metadata.desktop
+msgid "EcoWatt"
+msgstr ""
+
+#: ../metadata.desktop
+msgid "Displays Status from EcoWatt"
+msgstr ""
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr ""
+
+#: ../contents/config/config.qml
+msgid "Levels"
+msgstr ""
+
+#: ../contents/config/config.qml
+msgid "Error"
+msgstr ""
+
+#: ../contents/ui/config/configError.qml
+msgid "Error loading page"
+msgstr ""
+
+#: ../contents/ui/config/configError.qml ../contents/ui/config/configLevels.qml
+msgid "Notification title: "
+msgstr ""
+
+#: ../contents/ui/config/configError.qml ../contents/ui/config/configLevels.qml
+msgid "Notification message: "
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Title: "
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid " (optional)"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "URL: "
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "CSS selector: "
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Update interval: "
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "min"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Notification"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Display ? "
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid " (zenity needed)"
+msgstr ""
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Normal level"
+msgstr ""
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Color: "
+msgstr ""
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Icon: "
+msgstr ""
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Search regexp: "
+msgstr ""
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Alert level"
+msgstr ""
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Threat level"
+msgstr ""
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Unfound content"
+msgstr ""

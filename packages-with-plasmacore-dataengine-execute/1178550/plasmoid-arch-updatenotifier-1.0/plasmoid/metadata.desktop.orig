@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Arch Update Notifier Plasmoid
+Comment=Use checkupdates on Arch Linux to show pending updates.
+Type=Service
+
+X-KDE-Library=plasma_applet_tutorial
+X-KDE-PluginInfo-Author=David Greengas
+X-KDE-PluginInfo-Email=dave.greengas@gmail.com
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=com.dgreengas.updatenotifier
+X-KDE-PluginInfo-Version=2.0
+X-KDE-PluginInfo-Website=plasma.kde.org
+X-KDE-ServiceTypes=Plasma/Applet
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+X-KDE-PluginInfo-Category=Utilities

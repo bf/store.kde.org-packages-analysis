@@ -1,0 +1,26 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "dave.greengas@gmail.com",
+                "Name": "David Greengas"
+            }
+        ],
+        "Category": "Utilities",
+        "Dependencies": [
+        ],
+        "Description": "A utility to check for updates without updating the pacman database.",
+        "EnabledByDefault": true,
+        "Id": "org.kde.pacman.updatenotifier",
+        "License": "GPL",
+        "Name": "Arch Linux Update Checker",
+        "Icon": "package-new",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "1.0",
+        "Website": "https://github.com/harriseldon/plasmoid-arch-updatenotifier"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

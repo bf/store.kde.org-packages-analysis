@@ -1,0 +1,26 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "oll770@protonmail.com",
+                "Name": "oll770"
+            }
+        ],
+        "Category": "Web",
+        "Description": "Displays Status from EcoWatt",
+        "FormFactors": [
+            "desktop"
+        ],
+        "Icon": "view-web-browser-dom-tree",
+        "Id": "org.kde.plasma.ecowatt",
+        "License": "GPL-2.0+",
+        "Name": "EcoWatt",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "1.1",
+        "Website": "https://store.kde.org/p/1952906"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

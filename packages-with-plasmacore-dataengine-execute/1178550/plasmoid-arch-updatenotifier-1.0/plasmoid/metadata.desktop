@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=Arch Linux Update Checker
+Comment=A utility to check for updates without updating the pacman database.
+Icon=package-new
+
+X-KDE-ServiceTypes=Plasma/Applet
+Type=Service
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+
+
+X-KDE-PluginInfo-Author=David Greengas
+X-KDE-PluginInfo-Email=dave.greengas@gmail.com
+X-KDE-PluginInfo-Name=org.kde.pacman.updatenotifier
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://github.com/harriseldon/plasmoid-arch-updatenotifier
+X-KDE-PluginInfo-Category=Utilities
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true

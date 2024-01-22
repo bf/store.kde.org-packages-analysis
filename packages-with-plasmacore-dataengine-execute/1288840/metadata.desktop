@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Advanced On/Off Switch Commands
+Comment=Configurable On/Off Switch Commands
+
+Icon=system-shutdown
+Type=Service
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+
+X-KDE-PluginInfo-Author=Intika
+X-KDE-PluginInfo-Email=intika@librefox.org
+X-KDE-PluginInfo-Name=com.github.intika.on-off-switch-commands
+X-KDE-PluginInfo-Version=4.7.0
+X-KDE-PluginInfo-Website=https://github.com/Intika-Linux-KDE/Plasmoid-On-Off-Switch-Commands
+X-KDE-PluginInfo-Category=Windows and Tasks
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Depends=
+X-KDE-FormFactors=desktop

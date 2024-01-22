@@ -1,0 +1,332 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://i-glu4it.ru\n"
+"POT-Creation-Date: 2020-09-08 19:08+0300\n"
+"PO-Revision-Date: 2020-04-04 13:05+0300\n"
+"Last-Translator: Serhii V. Golocvko <cappelikan@gmail.com>\n"
+"Language-Team: Ukrainian <kde-ukrainian@lists.kde.ua>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Language: ru_RU\n"
+"X-Source-Language: C\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Основні"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Update interval"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "min"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Show notification"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Play sound"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Check Email"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Mark all as read"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Open Email client"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have a new mail"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "From:"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Subject:"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have %1 unread emails."
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have no unread emails."
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Mark as read"
+msgstr ""
+
+#~ msgid "Active"
+#~ msgstr "Активна"
+
+#~ msgid "Add"
+#~ msgstr "Додати"
+
+#~ msgid "Add Station"
+#~ msgstr "Додати станцію"
+
+#~ msgid "Add stations"
+#~ msgstr "Додати станції"
+
+#~ msgid "Advanced Radio Player"
+#~ msgstr "Advanced Radio Player"
+
+#~ msgid "Appearance"
+#~ msgstr "Зовнішній вигляд"
+
+#~ msgid "Attention! Configuration changes immediately.<br>Use with caution."
+#~ msgstr ""
+#~ "Попередження! Конфігурація змінюється миттєво.<br>Користуйтесь з "
+#~ "обережністю."
+
+#~ msgid "Bitrate:"
+#~ msgstr "Бітрейт:"
+
+#~ msgid "Buffering"
+#~ msgstr "Буферизация"
+
+#~ msgid ""
+#~ "Check server status\n"
+#~ "Please wait..."
+#~ msgstr ""
+#~ "Перевіряємо статус сервера\n"
+#~ "Будь ласка почекайте..."
+
+#~ msgid "Choose Icon"
+#~ msgstr "Оберіть значок"
+
+#~ msgid "Panel view"
+#~ msgstr "Вид на панелі"
+
+#~ msgid "icon"
+#~ msgstr "значок"
+
+#~ msgid "track name"
+#~ msgstr "назва доріжки"
+
+#~ msgid "Panel width"
+#~ msgstr "Ширина панелі"
+
+#~ msgid "Choose station"
+#~ msgstr "Оберіть станцію"
+
+#~ msgid "Choose station and enjoy..."
+#~ msgstr "Оберіть станцію й радійте..."
+
+#~ msgid "Clear"
+#~ msgstr "Очистити"
+
+#~ msgid "Codec:"
+#~ msgstr "Кодек:"
+
+#~ msgid "Configuration are copied to clipboard."
+#~ msgstr "Конфігурація скопійована в буфер обміну."
+
+#~ msgid "Configuration are locked."
+#~ msgstr "Конфігурація заблокована."
+
+#~ msgid "Configuration are restored."
+#~ msgstr "Конфігурація відновлена."
+
+#~ msgid "Configuration are unlocked!"
+#~ msgstr "Конфігурація розблокована!"
+
+#~ msgid "Copy"
+#~ msgstr "Копіювати"
+
+#~ msgid "Copy to clipboard your configuration"
+#~ msgstr "Копіювати в буфер обміну вашу конфігурацію"
+
+#~ msgid "Country:"
+#~ msgstr "Країна:"
+
+#~ msgid "Disable background for desktop representation"
+#~ msgstr "Вимкнути фон для робочого столу"
+
+#~ msgid "Edit"
+#~ msgstr "Редагувати"
+
+#~ msgid "Error"
+#~ msgstr "Помилка"
+
+#~ msgid "Font Color:"
+#~ msgstr "Колір тексту:"
+
+#~ msgid "Genre:"
+#~ msgstr "Жанр:"
+
+#~ msgid ""
+#~ "Get list of stations\n"
+#~ "Please wait..."
+#~ msgstr ""
+#~ "Отримуємо список станцій\n"
+#~ "Будь ласка почекайте..."
+
+#~ msgid "Icon:"
+#~ msgstr "Значок:"
+
+#~ msgid "Import/Export"
+#~ msgstr "Імпорт/Експорт"
+
+#~ msgid "Language:"
+#~ msgstr "Мова:"
+
+#~ msgid "Lock"
+#~ msgstr "Заблокувати"
+
+#~ msgid "Lock configuration"
+#~ msgstr "Заблокувати конфігурацію"
+
+#~ msgid "Move down"
+#~ msgstr "Вниз"
+
+#~ msgid "Move up"
+#~ msgstr "Вгору"
+
+#~ msgid "Name"
+#~ msgstr "Назва"
+
+#~ msgid "Name:"
+#~ msgstr "Назва:"
+
+#~ msgid "Paste"
+#~ msgstr "Вставити"
+
+#~ msgid "Paste from clipboard to restore configuration"
+#~ msgstr "Вставити конфігурацію з буфера обміну"
+
+#~ msgid "Play"
+#~ msgstr "Запустити"
+
+#~ msgid "Remove"
+#~ msgstr "Видалити"
+
+#~ msgid "Search"
+#~ msgstr "Пошук"
+
+#~ msgid "Search by"
+#~ msgstr "Пошук по"
+
+#~ msgid "Server status:"
+#~ msgstr "Статус сервера:"
+
+#~ msgid "Set Default"
+#~ msgstr "По замовчанню"
+
+#~ msgid "Show notification on track change"
+#~ msgstr "Показувати повідомлення при зміні треку"
+
+#~ msgid "Station"
+#~ msgstr "Станція"
+
+#~ msgid "Station URL:"
+#~ msgstr "URL станції:"
+
+#~ msgid "Station added. Click 'Apply' to save changes."
+#~ msgstr "Станцію добавлено. Натисніть 'Застосувати' для збереження."
+
+#~ msgid "Stop"
+#~ msgstr "Зупинити"
+
+#~ msgid "Tags:"
+#~ msgstr "Мітки:"
+
+#~ msgid "Unknown"
+#~ msgstr "Невідомо"
+
+#~ msgid "Unknown Artist"
+#~ msgstr "Невідомий виконавець"
+
+#~ msgid "Unknown Song"
+#~ msgstr "Невідомий трек"
+
+#~ msgid "Unlock"
+#~ msgstr "Розблокуати"
+
+#~ msgid "Unlock before restore configuration!"
+#~ msgstr "Розблокуйте перед вставкою!"
+
+#~ msgid "Unlock configuration"
+#~ msgstr "Розблокувати конфігурацію"
+
+#~ msgid "Url:"
+#~ msgstr "Адрес:"
+
+#~ msgid "Version: %1"
+#~ msgstr "Версія: %1"
+
+#~ msgid "Volume"
+#~ msgstr "Гучність"
+
+#~ msgid "country"
+#~ msgstr "країна"
+
+#~ msgid "language"
+#~ msgstr "мова"
+
+#~ msgid "name"
+#~ msgstr "ім'я"
+
+#~ msgid "tags"
+#~ msgstr "мітки"
+
+#~ msgid "About"
+#~ msgstr "Про програму"
+
+#~ msgid "License: %0"
+#~ msgstr "Ліцензія: %0"
+
+#~ msgid "Libraries in use"
+#~ msgstr "Використовувані бібліотеки"
+
+#~ msgid "Copyright"
+#~ msgstr "Авторські права"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Credits"
+#~ msgstr "Подяки"
+
+#~ msgid "Translators"
+#~ msgstr "Перекладачі"
+
+#~ msgid "Radio player with editable list of stations"
+#~ msgstr "Радіо із змінним списком станцій"
+
+#~ msgid "fixing errors"
+#~ msgstr "виправлення помилок"
+
+#~ msgid "idea for search"
+#~ msgstr "ідея пошуку станцій"
+
+#~ msgid ""
+#~ "If you want to help translate the application into your language<br>or "
+#~ "suggest corrections or new features, write me on dr@i-glu4it.ru."
+#~ msgstr ""
+#~ "Якщо ви хочете допомогти перекласти програму на вашу мову<br>або "
+#~ "запропонувати виправлення чи нові функції,<br>напишіть мені на dr@i-"
+#~ "glu4it.ru."
+
+#~ msgid ""
+#~ "Nothing found\n"
+#~ "Try changing your query"
+#~ msgstr ""
+#~ "Нічого не знайдено\n"
+#~ "Спробуйте змінити запит"

@@ -1,0 +1,23 @@
+[Desktop Entry]
+Name=Mailnag for Plasma
+Comment=Applet for mailnag daemon
+
+Icon=mail-message
+Type=Service
+ServiceTypes=Plasma/Applet
+
+X-KDE-PluginInfo-Author=Yuriy (Dr_i-glu4IT) Saurov
+X-KDE-PluginInfo-Email=dr@i-glu4it.ru
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=http://i-glu4it.ru
+X-KDE-PluginInfo-Category=System
+X-KDE-PluginInfo-Depends=mailnag
+X-KDE-PluginInfo-License=MIT
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-Name=org.kde.plasma.mailnag
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-Requires-FileDialog=Unused
+X-Plasma-Requires-LaunchApp=Unused
+X-Plasma-DefaultSize=

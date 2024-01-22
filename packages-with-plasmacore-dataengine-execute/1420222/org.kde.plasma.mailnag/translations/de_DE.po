@@ -1,0 +1,333 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Nico <nico.lubnau@t-online.de>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://i-glu4it.ru\n"
+"POT-Creation-Date: 2020-09-08 19:08+0300\n"
+"PO-Revision-Date: 2020-01-28 16:32+0300\n"
+"Last-Translator: Nico Lubnau\n"
+"Language-Team:\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Language: de_DE\n"
+"X-Source-Language: C\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Allgemeines"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Update interval"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "min"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Show notification"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Play sound"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Check Email"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Mark all as read"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Open Email client"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have a new mail"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "From:"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Subject:"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have %1 unread emails."
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have no unread emails."
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Mark as read"
+msgstr ""
+
+#~ msgid "Import/Export"
+#~ msgstr "Import/Export"
+
+#~ msgid "Appearance"
+#~ msgstr "Erscheinungsbild"
+
+#~ msgid "Search"
+#~ msgstr "Suche"
+
+#~ msgid "Attention! Configuration changes immediately.<br>Use with caution."
+#~ msgstr ""
+#~ "Achtung! Änderungen erfolgen sofort. <br> Gehen Sie vorsichtig mit Ihrer "
+#~ "Konfiguration um."
+
+#~ msgid "Copy"
+#~ msgstr "Kopieren"
+
+#~ msgid "Icon:"
+#~ msgstr "Symbol:"
+
+#~ msgid "Panel view"
+#~ msgstr "Panel Ansicht"
+
+#~ msgid "icon"
+#~ msgstr "symbol"
+
+#~ msgid "track name"
+#~ msgstr "titelname"
+
+#~ msgid "Panel width"
+#~ msgstr "Plattenbreite"
+
+#~ msgid "Disable background for desktop representation"
+#~ msgstr "Transparenter Hintergrund auf der Arbeitsfläche"
+
+#~ msgid "Font Color:"
+#~ msgstr "Schriftfarbe:"
+
+#~ msgid "Choose Icon"
+#~ msgstr "Symbol auswählen"
+
+#~ msgid "Set Default"
+#~ msgstr "Wähle Standard"
+
+#~ msgid "Copy to clipboard your configuration"
+#~ msgstr "Konfiguration in die Zwischenablage kopieren."
+
+#~ msgid "Configuration are copied to clipboard."
+#~ msgstr "Ihre Konfiguration wurde in die Zwischenablage kopiert."
+
+#~ msgid "Unlock"
+#~ msgstr "Entsperren"
+
+#~ msgid "Lock"
+#~ msgstr "Sperren"
+
+#~ msgid "Lock configuration"
+#~ msgstr "Konfiguration sperren"
+
+#~ msgid "Unlock configuration"
+#~ msgstr "Konfiguration entsperren"
+
+#~ msgid "Configuration are locked."
+#~ msgstr "Ihre Konfiguration wurde gesperrt."
+
+#~ msgid "Configuration are unlocked!"
+#~ msgstr "Ihre Konfiguration wurde entsperrt!"
+
+#~ msgid "Paste"
+#~ msgstr "Einfügen"
+
+#~ msgid "Paste from clipboard to restore configuration"
+#~ msgstr "Konfiguration aus der Zwischenablage einfügen."
+
+#~ msgid "Unlock before restore configuration!"
+#~ msgstr "Entsperren Sie Ihre Konfiguration vor dem Einfügen!"
+
+#~ msgid "Configuration are restored."
+#~ msgstr "Ihre Konfiguration aus der Zwischenablage wurde eingefügt."
+
+#~ msgid "Name"
+#~ msgstr "Sender"
+
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "Remove"
+#~ msgstr "Entfernen"
+
+#~ msgid "Move up"
+#~ msgstr "Nach oben"
+
+#~ msgid "Move down"
+#~ msgstr "Nach unten"
+
+#~ msgid "Show notification on track change"
+#~ msgstr "Benachrichtigung bei Titelwechsel"
+
+#~ msgid "Station"
+#~ msgstr "Sender"
+
+#~ msgid "Name:"
+#~ msgstr "Name:"
+
+#~ msgid "Station URL:"
+#~ msgstr "Sender-URL:"
+
+#~ msgid "Active"
+#~ msgstr "Aktiv"
+
+#~ msgid "Advanced Radio Player"
+#~ msgstr "Advanced Radio Player"
+
+#~ msgid "Choose station"
+#~ msgstr "Sender wählen"
+
+#~ msgid "Unknown Artist"
+#~ msgstr "Unbekannter Künstler"
+
+#~ msgid "Unknown Song"
+#~ msgstr "Unbekannter Titel"
+
+#~ msgid "Buffering"
+#~ msgstr "Zwischenspeicherung"
+
+#~ msgid "Choose station and enjoy..."
+#~ msgstr "Sender wählen und genießen..."
+
+#~ msgid "Add stations"
+#~ msgstr "Sender hinzufügen"
+
+#~ msgid "Bitrate:"
+#~ msgstr "Bitrate:"
+
+#~ msgid "Genre:"
+#~ msgstr "Genre:"
+
+#~ msgid "Clear Result"
+#~ msgstr "Eingabe löschen"
+
+#~ msgid ""
+#~ "Get list of stations\n"
+#~ "Please wait..."
+#~ msgstr "Empfange Senderliste, bitte warten..."
+
+#~ msgid ""
+#~ "Check server status\n"
+#~ "Please wait..."
+#~ msgstr ""
+#~ "Überprüfe Serverstatus\n"
+#~ "Bitte warten..."
+
+#~ msgid "Stop"
+#~ msgstr "Stop"
+
+#~ msgid "Play"
+#~ msgstr "Abspielen"
+
+#~ msgid "Add Station"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Station added. Click 'Apply' to save changes."
+#~ msgstr "'Anwenden' zum Übernehmen drücken!"
+
+#~ msgid "Url:"
+#~ msgstr "Url:"
+
+#~ msgid "Codec:"
+#~ msgstr "Codec:"
+
+#~ msgid "Server status:"
+#~ msgstr "Serverstatus:"
+
+#~ msgid "Country:"
+#~ msgstr "Land:"
+
+#~ msgid "Language:"
+#~ msgstr "Sprache:"
+
+#~ msgid "Tags:"
+#~ msgstr "Schlagwörter:"
+
+#~ msgid "Error"
+#~ msgstr "Fehler"
+
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Search by"
+#~ msgstr "Suche nach"
+
+#~ msgid "name"
+#~ msgstr "name"
+
+#~ msgid "country"
+#~ msgstr "land"
+
+#~ msgid "language"
+#~ msgstr "sprache"
+
+#~ msgid "tags"
+#~ msgstr "schlagwörter"
+
+#~ msgid "Volume"
+#~ msgstr "Lautstärke"
+
+#~ msgid "Version: %1"
+#~ msgstr "Version: %1"
+
+#~ msgid "About"
+#~ msgstr "Über"
+
+#~ msgid "License: %0"
+#~ msgstr "Lizenz: %0"
+
+#~ msgid "Libraries in use"
+#~ msgstr "Verwendete Bibliotheken"
+
+#~ msgid "Copyright"
+#~ msgstr "Urheberrechte ©"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Credits"
+#~ msgstr "Dank"
+
+#~ msgid "Translators"
+#~ msgstr "Übersetzer"
+
+#~ msgid "Radio player with editable list of stations"
+#~ msgstr "Radio-Player mit bearbeitbarer Senderliste"
+
+#~ msgid "fixing errors"
+#~ msgstr "Fehler beheben"
+
+#~ msgid "idea for search"
+#~ msgstr "Idee für die Suche"
+
+#~ msgid ""
+#~ "If you want to help translate the application into your language<br>or "
+#~ "suggest corrections or new features, write me on dr@i-glu4it.ru."
+#~ msgstr ""
+#~ "Wenn Sie bei der Übersetzung der Anwendung in Ihre Sprache<br>helfen oder "
+#~ "Korrekturen oder neue Funktionen vorschlagen möchten,<br>schreiben Sie "
+#~ "mir an dr@i-glu4it.ru."
+
+#~ msgid ""
+#~ "Nothing found\n"
+#~ "Try changing your query"
+#~ msgstr ""
+#~ "Es wurde nichts gefunden\n"
+#~ "Versuchen Sie, Ihre Abfrage zu ändern"

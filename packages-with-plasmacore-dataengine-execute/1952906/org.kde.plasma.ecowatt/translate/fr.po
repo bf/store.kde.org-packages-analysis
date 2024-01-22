@@ -1,0 +1,117 @@
+# Translation of ecowatt in fr
+# Copyright (C) 2022
+# This file is distributed under the same license as the ecowatt package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ecowatt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-14 23:39+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: oll770 <oll770@protonmail.com>\n"
+"Language-Team: FR <FR@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../metadata.desktop
+msgid "EcoWatt"
+msgstr "EcoWatt"
+
+#: ../metadata.desktop
+msgid "Displays Status from EcoWatt"
+msgstr "Affiche les statuts pour EcoWatt"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Général"
+
+#: ../contents/config/config.qml
+msgid "Levels"
+msgstr "Niveaux"
+
+#: ../contents/config/config.qml
+msgid "Error"
+msgstr "Erreur"
+
+#: ../contents/ui/config/configError.qml
+msgid "Error loading page"
+msgstr "Erreur de chargement de la page"
+
+#: ../contents/ui/config/configError.qml ../contents/ui/config/configLevels.qml
+msgid "Notification title: "
+msgstr "Titre de la notification: "
+
+#: ../contents/ui/config/configError.qml ../contents/ui/config/configLevels.qml
+msgid "Notification message: "
+msgstr "Message de notification: "
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Title: "
+msgstr "Titre:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid " (optional)"
+msgstr " (optionnel)"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "URL: "
+msgstr "URL: "
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "CSS selector: "
+msgstr "Sélecteur CSS: "
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Update interval: "
+msgstr "Interval de mise à jour: "
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "min"
+msgstr "min"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Notification"
+msgstr "Notification"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Display ? "
+msgstr "Afficher ? "
+
+#: ../contents/ui/config/configGeneral.qml
+msgid " (zenity needed)"
+msgstr " (zenity est requis)"
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Normal level"
+msgstr "Niveau normal"
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Color: "
+msgstr "Couleur: "
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Icon: "
+msgstr "Icone: "
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Search regexp: "
+msgstr "Regexp de recherche: "
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Alert level"
+msgstr "Niveau alerte"
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Threat level"
+msgstr "Niveau menace"
+
+#: ../contents/ui/config/configLevels.qml
+msgid "Unfound content"
+msgstr "Contenu introuvable"
+
+#~ msgid "Unknown"
+#~ msgstr "Inconnu"

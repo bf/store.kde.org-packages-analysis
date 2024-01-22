@@ -1,0 +1,33 @@
+{
+	"KPlugin": {
+		"Name": "Battery bar",
+		"Description": "Plasmoid for displaying battery status as a long horizontal bar.",
+
+		"Icon": "ui/icon.svg",
+
+		"Authors": [
+			{
+				"Email": "lonelytransistor@protonmail.com",
+				"Name": "lonelytransistor"
+			}
+		],
+
+		"Id": "org.kde.batteryBar",
+		"Version": "2.0",
+		"Website": "https://github.com/lonelytransistor/kde_batterybar",
+		"Category": "System Information",
+		"License": "GPL2",
+
+		"ServiceTypes": [
+			"Plasma/Applet"
+		],
+		"FormFactors": [
+			"desktop"
+		]
+	},
+	"X-Plasma-API": "declarativeappletscript",
+	"X-Plasma-MainScript": "ui/main.qml",
+	"X-Plasma-Provides": [
+		"org.kde.plasma.powermanagement"
+	]
+}

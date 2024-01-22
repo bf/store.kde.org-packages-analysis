@@ -1,0 +1,28 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "moose@ylsoftware.com",
+                "Name": "Vadim Kalinnikov"
+            }
+        ],
+        "Category": "Utilities",
+        "Dependencies": [
+        ],
+        "Description": "Show info about your Yandex.Disk account",
+        "Description[ru]": "Отображает информацию о вашем аккаунте \"Яндекс.Диск\"",
+        "EnabledByDefault": true,
+        "Icon": "images/yandexdisk.svg",
+        "Id": "com.ylsoftware.plasma.ydinfo",
+        "License": "LGPL-2.1+",
+        "Name": "Yandex.Disk Info",
+        "Name[ru]": "Яндекс.Диск Инфо",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.0.6",
+        "Website": "https://github.com/moose-kazan/plasmoid-ydinfo"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

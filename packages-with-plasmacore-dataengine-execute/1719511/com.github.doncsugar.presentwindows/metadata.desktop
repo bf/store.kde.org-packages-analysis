@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Present Windows Button (Willow)
+Comment=Trigger the Present Windows desktop effect's shortcut with a click.
+
+Type=Service
+Icon=window
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/Main.qml
+
+X-KDE-PluginInfo-Author=doncsugar
+X-KDE-PluginInfo-Email=
+X-KDE-PluginInfo-Name=com.github.doncsugar.presentwindows
+X-KDE-PluginInfo-Version=10
+X-KDE-PluginInfo-Website=https://github.com/doncsugar/plasma-applet-presentwindows
+X-KDE-PluginInfo-Category=Windows and Tasks

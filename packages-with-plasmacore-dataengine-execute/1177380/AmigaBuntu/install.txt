@@ -1,0 +1,13 @@
+ This is an Amiga inspired desktop theme modified from breeze-alphablack.
+ I claim no ownership.
+ 
+ 
+ 
+ Deposit in :
+ ~/.local/share/plasma/desktoptheme/
+ 
+ or
+ 
+ /usr/share/plasma/desktoptheme/
+ 
+ Then change to the theme!

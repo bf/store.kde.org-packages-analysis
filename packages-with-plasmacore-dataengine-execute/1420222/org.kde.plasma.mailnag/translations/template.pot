@@ -1,0 +1,74 @@
+# Translation of mailnag in LANGUAGE
+# Copyright (C) 2020
+# This file is distributed under the same license as the mailnag package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mailnag \n"
+"Report-Msgid-Bugs-To: http://i-glu4it.ru\n"
+"POT-Creation-Date: 2020-09-08 19:08+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Update interval"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "min"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Show notification"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Play sound"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Check Email"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Mark all as read"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Open Email client"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have a new mail"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "From:"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Subject:"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have %1 unread emails."
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "You have no unread emails."
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Mark as read"
+msgstr ""

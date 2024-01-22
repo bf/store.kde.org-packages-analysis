@@ -1,0 +1,17 @@
+import QtQuick 2.0
+import org.kde.plasma.configuration 2.0
+
+ConfigModel {
+    ConfigCategory {
+         name: i18n("Settings")
+         icon: "preferences-desktop-settings"
+         source: "config/configSettings.qml"
+    }
+    
+    ConfigCategory {
+         name: i18n("About")
+         icon: "preferences-desktop-notification"
+         source: "config/configAbout.qml"
+    }      
+    
+}
