@@ -1,0 +1,711 @@
+❯ grep -Hr "qdbus " .
+
+./1956858/Zafiro-Nord-Dark-Blue/contents/scripts/RemoveWidget.sh:qdbus org.kde.plasmashell /PlasmaShell evaluateScript 'const NumDePanels = (panels().length)
+./1945081/org.kde.batteryBar/contents/ui/config/SourceSettings.qml:            connectedSources: ["qdbus --literal --system org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.EnumerateDevices"]
+./1945081/org.kde.batteryBar/contents/ui/Battery.qml:                let dbusPath = 'qdbus --system org.freedesktop.UPower ' + devicePath + ' org.freedesktop.UPower.Device.'
+./1935442/com.kainat.binarylayoutsaver/contents/scripts/load.sh:qdbus org.kde.KWin /KWin reconfigure
+./1909220/contents/ui/main.qml:                connectSource(`qdbus org.kde.plasmashell /org/kde/osdService showText "${icon}" "${text}"`);
+./1878511/contents/ui/main.qml:        executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut Overview')
+./1878384/contents/ui/main.qml:            connectSource('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Exquisite"');
+./1833220/SimpleOverviewPager/contents/ui/main.qml:        executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut Overview')
+./1805105/install.sh:qdbus org.kde.KWin /KWin reconfigure
+./1805105/uninstall.sh:qdbus org.kde.KWin /KWin reconfigure
+./1789957/kwin-system76-scheduler-integration/README.md:    [ "$member" = "member=$METHOD" ] && /usr/bin/qdbus --system $SERVICE $PATH $INTERFACE.$METHOD $pid
+./1754364/divide-file.desktop:Exec=dbusRef=$(kdialog --title="Divicion" --progressbar " Dividiendo ¡ $(basename %f) ! " 0); split -b 50M %u division.; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) Dividido !";
+./1749225/install.sh:                           qdbus "org.kde.konsole-$PID_konsole" "/konsole/MainWindow_1" "org.qtproject.Qt.QWidget.hide"
+./1735447/org.kde.willow-light.desktop/contents/splash/Splash.qml:    property string checkWallpaper: "qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.currentConfigGroup = Array(\"Wallpaper\", \"org.kde.image\", \"General\");print(d.readConfig(\"Image\"))}';"
+./1735447/org.kde.willow-light.desktop/contents/splash/Splash.qml:    property string checkColor: "qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops= desktops();for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.currentConfigGroup = Array(\"Wallpaper\", \"org.kde.color\", \"General\");print(d.readConfig(\"Color\"))}';"
+./1735447/org.kde.willow-light.desktop/contents/splash/Splash.qml:    property string checkPlugin: "qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];print(d.readConfig(\"wallpaperplugin\"))}';"
+./1735447/org.kde.willow-light.desktop/contents/lockscreen/willowComponents/PowerMenu.qml:                    //qdbus org.kde.Solid.PowerManagement /org/freedesktop/PowerManagement Suspend
+./1735447/org.kde.willow-light.desktop/contents/lockscreen/willowComponents/PowerMenu.qml://                    executable.exec("qdbus local.org_kde_powerdevil /org/kde/Solid/PowerManagement/Actions/SuspendSession suspendToRam");
+./1735447/org.kde.willow-light.desktop/contents/lockscreen/willowComponents/PowerMenu.qml:                    executable.exec("qdbus org.kde.ksmserver /KSMServer logout 0 1 2");
+./1735447/org.kde.willow-light.desktop/contents/lockscreen/willowComponents/PowerMenu.qml:                    executable.exec("qdbus org.kde.ksmserver /KSMServer logout 0 2 2");
+./1719511/com.github.doncsugar.presentwindows/contents/ui/Main.qml:             executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ExposeAll"')
+./1719511/com.github.doncsugar.presentwindows/contents/ui/Main.qml:             executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"')
+./1719511/com.github.doncsugar.presentwindows/contents/ui/Main.qml:             executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ExposeClass"')
+./1719511/com.github.doncsugar.presentwindows/contents/ui/Main.qml:             executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ShowDesktopGrid"')
+./1719511/com.github.doncsugar.presentwindows/contents/ui/Main.qml:             executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Parachute"')
+./1719511/com.github.doncsugar.presentwindows/contents/ui/Main.qml:        executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Overview"')
+./1719511/com.github.doncsugar.presentwindows/contents/ui/lib/DesktopEffectToggle.qml:          property string readStateCommand: 'qdbus org.kde.KWin /Effects isEffectLoaded ' + effectId
+./1719511/com.github.doncsugar.presentwindows/contents/ui/lib/DesktopEffectToggle.qml:          property string toggleStateCommand: 'qdbus org.kde.KWin /Effects toggleEffect ' + effectId
+./1719511/com.github.doncsugar.presentwindows/contents/ui/lib/DesktopEffectToggle.qml:          // For some reason, the toggleEffect qdbus function does not save to kwinrc.
+./1704465/adhe.textcommand/contents/ui/configGeneral.qml:            onClicked: command.text = 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut Overview'
+./1704465/adhe.textcommand/contents/ui/configGeneral.qml:            text: i18n("qdbus org.kde.kglobalaccel /component/kwin invokeShortcut Expose")
+./1704465/adhe.textcommand/contents/ui/configGeneral.qml:            text: i18n("qdbus org.kde.kglobalaccel /component/kwin invokeShortcut Overview")
+./1696665/convert-video.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.webm; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a WEBM !";
+./1696665/convert-video.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.mp4; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a MP4 !";
+./1696665/convert-video.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.avi; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a AVI !";
+./1696665/convert-video.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.mkv; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a MKV !";
+./1696665/convert-video.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.mp3; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a MP3 !";
+./1696665/convert-video.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.gif; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a GIF !";
+./1696665/convert-video.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.flv; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a FLV !";
+./1696665/Ext-Sub.desktop:Exec=type ccextractor; if [ $? -eq 0 ]; then konsole --hold -e bash -c 'dbusRef=$(kdialog --title="Subtitulo" --progressbar "            Extracting...    Please wait...            " 0); ccextractor "%u"; qdbus $dbusRef close; kdialog --title "Extraccion correcta" --passivepopup "Subtitulo de ('%u').";'; else kdialog --title "Dependencia faltante" --error "Porfavor instale ccextractor para continuar."; fi;
+./1696665/jpg-png-wallp.desktop:Exec=qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();print (allDesktops);for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = "org.kde.image";d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");d.writeConfig("Image", "%u")}'; kdialog --title "Fondo establecido" --passivepopup "¡ $(basename %f) Establecido como fondo de Pantalla !";
+./1696665/convert-audio.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.mp3; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a MP3 !";
+./1696665/convert-audio.desktop:Exec=dbusRef=$(kdialog --title="Conversion ffmpeg" --progressbar " Convirtiendo ¡ $(basename %f) ! " 0); ffmpeg -i %u -y %u.ogg; qdbus $dbusRef close; kdialog --title "Operacion finalizada" --passivepopup "¡ $(basename %f) convertido a OGG !";
+./1691743/com.github.varlesh.greybird-darker/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1691743/com.github.varlesh.greybird-darker/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1691743/com.github.varlesh.greybird-darker/contents/lockscreen/LockScreenUi.qml:         executable.exec('qdbus org.kde.Solid.PowerManagement /org/freedesktop/PowerManagement Suspend')
+./1663528/com.github.varlesh.nova-Papilio/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1663528/com.github.varlesh.nova-Papilio/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1662817/com.github.varlesh.nova-Pengi/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1662817/com.github.varlesh.nova-Pengi/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1661587/com.github.varlesh.nova-Leo/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1661587/com.github.varlesh.nova-Leo/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1660775/com.github.varlesh.nova-Amare/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1660775/com.github.varlesh.nova-Amare/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1659904/com.github.varlesh.nova-Lacus/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1659904/com.github.varlesh.nova-Lacus/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1659134/com.github.varlesh.nova-Terra/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1659134/com.github.varlesh.nova-Terra/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1636998/step-regrid/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1632260/step-resize/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1632259/step-move/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1629051/tincture/cleanup.sh:# qdbus org.kde.KWin /KWin reconfigure
+./1619690/install.sh:qdbus org.kde.KWin /KWin reconfigure
+./1619690/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1619690/uninstall.sh:qdbus org.kde.KWin /KWin reconfigure
+./1619642/tile-gaps/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1618008/always-open-on-focused-screen/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1617645/install.sh:qdbus org.kde.KWin /KWin reconfigure
+./1617645/uninstall.sh:qdbus org.kde.KWin /KWin reconfigure
+./1617641/always-open-on-primary-screen/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1617640/always-open-on-active-screen/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1596521/contents/ui/main.qml://         executable.exec("qdbus org.kde.KWin /Compositor " + action);
+./1596521/contents/ui/main.qml:        executable.exec("qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Suspend Compositing'");
+./1584342/contents/ui/SessionControlBar.qml:        commandToLaunch: 'qdbus org.kde.ksmserver /KSMServer logout -1 2 2'
+./1584342/contents/ui/SessionControlBar.qml:        commandToLaunch: 'qdbus org.kde.ksmserver /KSMServer logout -1 1 2'
+./1584342/contents/ui/SessionControlBar.qml:        commandToLaunch: 'qdbus org.kde.ksmserver /KSMServer logout -1 0 2'
+./1584342/contents/ui/SessionControlBar.qml:        commandToLaunch: 'qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock'
+./1521795/com.github.varlesh.greybird/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1521795/com.github.varlesh.greybird/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1521795/com.github.varlesh.greybird/contents/lockscreen/LockScreenUi.qml:         executable.exec('qdbus org.kde.Solid.PowerManagement /org/freedesktop/PowerManagement Suspend')
+./1519916/kxn.menus.corner/contents/ui/ConfigGeneral.qml:            placeholderText: i18n("qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock")
+./1519916/kxn.menus.corner/contents/ui/ConfigGeneral.qml:            placeholderText: i18n("qdbus org.kde.ksmserver /KSMServer logout 0 0 0")
+./1514266/losslessimages2pdf.v1.3.desktop:Exec=it=$(echo $LANG|cut -f1 -d_|grep it|wc -l); fr=$(echo $LANG|cut -f1 -d_|grep fr|wc -l); if [ "$it" -eq "1" ]; then TITLEPROGRESS="Creo file PDF"; MSGWRITING="Scrittura di"; TITLECANCEL="STOP!"; MSGCANCEL="Operazione annullata come richiesto."; TITLEDONE="FATTO!"; MSGDONE="Il tuoi file sono pronti."; TITLEERROR="ERRORE"; TITLEWARNING="ATTENZIONE"; MSGEXISTING="Il file seguente esiste già: "; MSGOVERWRITE="Sovrascrivi"; MSGSKIP="Salta"; elif [ "$fr" -eq "1" ]; then TITLEPROGRESS="Création des fichiers PDF"; MSGWRITING="Écriture de"; TITLECANCEL="STOP!"; MSGCANCEL="Opération annulée comme demandé."; TITLEDONE="C'EST FAIT !"; MSGDONE="Vos fichiers sont prêts."; TITLEERROR="ERREUR"; TITLEWARNING="ATTENTION"; MSGEXISTING="Le fichier ci-dessous existe déjà : "; MSGOVERWRITE="Remplacer"; MSGSKIP="Sauter"; else TITLEPROGRESS="Creating PDF files"; MSGWRITING="Writing of"; TITLECANCEL="STOPPED!";MSGCANCEL="Operation cancelled as requested."; TITLEDONE="DONE!"; MSGDONE="Your files are ready."; TITLEERROR="ERROR"; TITLEWARNING="WARNING"; MSGEXISTING="The file below already exists: "; MSGOVERWRITE="Overwrite"; MSGSKIP="Skip"; fi; count=0; for infile in %F; do count=$((count+1)); done; count=$((count*100)); progress=$(kdialog --title "$TITLEPROGRESS" --progressbar "" $(($count+1))); count=0; for infile in %F; do outfile="${infile%.*}.pdf"; choice=0; cancel=0; qdbus $progress setLabelText "$MSGWRITING $(basename "$outfile")" > /dev/null || cancel=1; if [ $cancel -eq 0 -a -f "$outfile" ]; then kdialog --title "$TITLEWARNING" --warningyesnocancel "$MSGEXISTING \n $outfile" --yes-label=$MSGOVERWRITE --no-label=$MSGSKIP ; choice=$?; fi; count=$((count+50)); qdbus $progress Set "" value $count > /dev/null || cancel=1; if [ $cancel -eq 0 -a $choice -eq 0 ]; then if [ $(identify -format '%[channels]' "$infile" |grep 'a'|wc -l) -gt 0 ]; then message=$(convert "$infile" -background white -alpha remove -alpha off - | img2pdf -o "$outfile" 2>&1); else message=$(img2pdf -o "$outfile" "$infile" 2>&1); fi; if [ $? -gt 0 ]; then kdialog --title "$TITLEERROR" --error "img2pdf: $message"; rm "$outfile" 2>/dev/null; fi; elif [ $choice -ge 2 ]; then cancel=1; fi; count=$((count+50)); qdbus $progress Set "" value $count > /dev/null || cancel=1; if [ $cancel -gt 0 ]; then notify-send -i application-pdf -a "$TITLECANCEL" -t 6000 "$MSGCANCEL"; rm -r "$tmpDir"; qdbus $progress close > /dev/null; exit 1; fi; done; sleep 0,1; qdbus $progress close > /dev/null; notify-send -i application-pdf -a "$TITLEDONE" -t 6000 "$MSGDONE"; exit 0;
+./1514266/losslessimages2pdf.v1.3.desktop:Exec=it=$(echo $LANG|cut -f1 -d_|grep it|wc -l); fr=$(echo $LANG|cut -f1 -d_|grep fr|wc -l); if [ "$it" -eq "1" ]; then TITLEPROGRESS="Creo file PDF"; MSGALPHA="Rimozione canale alpha da"; MSGPREPARING="Preparazione di"; MSGWRITING="Scrittura di"; TITLECANCEL="STOP!"; MSGCANCEL="Operazione annullata come richiesto."; TITLEDONE="FATTO!"; MSGDONE="Il tuo file è pronto."; TITLEERROR="ERRORE"; MSGFOLDER="Impossibile accedere a"; elif [ "$fr" -eq "1" ]; then TITLEPROGRESS="Création du fichier PDF"; MSGALPHA="Suppression du canal alpha depuis"; MSGPREPARING="Préparation de"; MSGWRITING="Écriture de"; TITLECANCEL="STOP!"; MSGCANCEL="Opération annulée comme demandé."; TITLEDONE="C'EST FAIT !"; MSGDONE="Votre fichier est prêt."; TITLEERROR="ERREUR"; MSGFOLDER="Impossible d'accéder à"; else TITLEPROGRESS="Creating PDF file"; MSGALPHA="Ditching alpha channel from"; MSGPREPARING="Preparing"; MSGWRITING="Writing of"; TITLECANCEL="STOPPED!"; MSGCANCEL="Operation cancelled as requested."; TITLEDONE="DONE!"; MSGDONE="Your file is ready."; TITLEERROR="ERROR"; MSGFOLDER="No access to"; fi; count=0; for infile in %F; do count=$((count+1)); outdir=$(dirname "$infile"); done; cd "$outdir" || kdialog --title "$TITLEERROR" --error "$MSGFOLDER $outdir"; outfile=$(kdialog --getsavefilename "$outdir" "application/pdf") || exit 1; if [ $? -eq 0 ]; then outfile="${outfile%.*}.pdf"; tmpdir="$(dirname "$outfile")/.img2pdf.$(date +%s)"; mkdir "$tmpdir"; if [ $? -eq 0 ]; then count=$((count*100)); progress=$(kdialog --title "$TITLEPROGRESS" --progressbar "" $(($count+1))); count="0"; for infile in %F; do cancel=0; count=$((count+50)); qdbus $progress Set "" value$count > /dev/null || cancel=1; if [ $cancel -eq 0 ]; then tmpfile=$tmpdir/$(printf "%08d" $count)_no-alpha_$(basename "$infile"); if [ $(identify -format '%[channels]' "$infile" |grep 'a'|wc -l) -gt 0 ]; then qdbus $progress setLabelText "$MSGALPHA $(basename "$infile")" > /dev/null || cancel=1; message=$(convert "$infile" -background white -alpha remove -alpha off "$tmpfile" 2>&1); else qdbus $progress setLabelText "$MSGPREPARING $(basename "$infile")" > /dev/null || cancel=1; message=$(cp "$infile" "$tmpfile" 2>&1); fi; if [ $? -gt 0 ]; then kdialog --title"$TITLEERROR" --error "imagemagick: $message"; rm "$tmpfile" 2>/dev/null; fi; fi; count=$((count+50)); qdbus $progress Set "" value $count > /dev/null || cancel=1; if [ $cancel -gt 0 ]; then notify-send -i application-pdf -a "$TITLECANCEL" -t 6000 "$MSGCANCEL"; rm -r "$tmpdir"; qdbus $progress close > /dev/null; exit 1; fi; done; else kdialog --title "$TITLEERROR" --error "$MSGFOLDER $tmpdir"; qdbus $progress close > /dev/null; exit 1; fi; cd "$tmpdir" || kdialog --title "$TITLEERROR" --error "$MSGFOLDER $tmpdir"; if [ $? -gt 0 ]; then rm -r "$tmpdir"; qdbus $progress close > /dev/null; exit 1; fi; qdbus $progress setLabelText "$MSGWRITING $(basename "$outfile")" > /dev/null || cancel=1; if [ $cancel -gt 0 ]; then notify-send -i application-pdf -a "$TITLECANCEL" -t 6000 "$MSGCANCEL"; rm -r "$tmpdir"; qdbus $progress close > /dev/null; exit 1; else message=$(img2pdf -o "$outfile" ./* 2>&1); fi; if [ $? -eq 0 ]; then notify-send -i application-pdf -a "$TITLEDONE" -t 6000 "$MSGDONE"; else kdialog --title "$TITLEERROR" --error "img2pdf: $message"; fi; sleep 0,1; qdbus $progress close > /dev/null; cd ..; rm -r "$tmpdir";fi; exit 0;
+./1514266/losslessimagesfrompdf.v1.3.desktop:Exec=count=0;  for f in %F; do count=$((count+1)); fdir=$(dirname "$f"); done;  count=$((count*100)); progress=$(kdialog --title "Extracting images..." --progressbar "" $(($count+1)));  count="0";  for f in %F; do qdbus $progress setLabelText "Reading from file $(basename "${f%.*}.pdf")" > /dev/null;  count=$((count+50)); qdbus $progress Set "" value $count > /dev/null;  if [ $? -gt 0 ]; then notify-send -i application-pdf -a "STOP!" -t 6000 "Operation cancelled as requested."; rm -r "$tmpDir"; exit 1; fi;  message=$(pdfimages -all "$f" "${f%.*}");  if [ $? -gt 0 ]; then kdialog --title "ERROR" --error "pdfimages: $message"; fi;  count=$((count+50)); qdbus $progress Set "" value $count > /dev/null;  if[ $? -gt 0 ]; then notify-send -i application-pdf -a "STOP!" -t 6000 "Operation cancelled as requested."; rm -r "$tmpDir"; exit 1; fi; done;  sleep 0,1; qdbus $progress close > /dev/null; notify-send -i application-pdf -a "DONE!" -t 6000 "Extraction complete.";  exit 0;
+./1514266/losslessimagesfrompdf.v1.3.desktop:Exec=count=0;  for f in %F; do count=$((count+1)); fdir=$(dirname "$f"); done;  outdir=$(kdialog --getexistingdirectory "$fdir") && cd "$outdir"|| exit 1;  count=$((count*100)); progress=$(kdialog --title "Extracting images..." --progressbar "" $(($count+1)));  count="0";  for f in %F; do qdbus $progress setLabelText "Reading fromfile $(basename "${f%.*}.pdf")" > /dev/null;  count=$((count+50)); qdbus $progress Set "" value $count > /dev/null;  if [ $? -gt 0 ]; then notify-send -i application-pdf -a "STOP!" -t 6000"Operation cancelled as requested."; rm -r "$tmpDir"; exit 1; fi;  message=$(pdfimages -all "$f" "$(basename "${f%.*}")" 2>&1);  if [ $? -gt 0 ]; then kdialog --title "ERROR" --error "pdfimages: $message"; fi;  count=$((count+50)); qdbus $progress Set "" value $count > /dev/null;  if [ $? -gt 0 ]; then notify-send -i application-pdf -a "STOP!" -t 6000 "Operation cancelled asrequested."; rm -r "$tmpDir"; exit 1; fi; done;  sleep 0,1; qdbus $progress close > /dev/null;  notify-send -i application-pdf -a "DONE!" -t 6000 "Extraction complete.";  exit 0;
+./1514266/losslessimage2pdf.v1.3.desktop:Exec=it=$(echo $LANG|cut -f1 -d_|grep it|wc -l); fr=$(echo $LANG|cut -f1 -d_|grep fr|wc -l); if [ "$it" -eq "1" ]; then TITLEPROGRESS="Creo file PDF"; MSGWRITING="Scrittura di"; TITLECANCEL="STOP!"; MSGCANCEL="Operazione annullata come richiesto."; TITLEDONE="FATTO!"; MSGDONE="Il tuo file è pronto."; TITLEERROR="ERRORE"; TITLEWARNING="ATTENZIONE"; MSGEXISTING="Il file seguente esiste già: "; MSGOVERWRITE="Sovrascrivi"; MSGSKIP="Salta"; elif [ "$fr" -eq "1" ]; then TITLEPROGRESS="Création du fichier PDF"; MSGWRITING="Écriture de"; TITLECANCEL="STOP!"; MSGCANCEL="Opération annulée comme demandé."; TITLEDONE="C'EST FAIT !"; MSGDONE="Votre fichier est prêt."; TITLEERROR="ERREUR"; TITLEWARNING="ATTENTION"; MSGEXISTING="Le fichier ci-dessous existe déjà : "; MSGOVERWRITE="Remplacer"; MSGSKIP="Sauter"; else TITLEPROGRESS="Creating PDF file"; MSGWRITING="Writing of"; TITLECANCEL="STOPPED!"; MSGCANCEL="Operation cancelled as requested."; TITLEDONE="DONE!"; MSGDONE="Your file is ready."; TITLEERROR="ERROR"; TITLEWARNING="WARNING"; MSGEXISTING="The file below already exists: "; MSGOVERWRITE="Overwrite"; MSGSKIP="Skip"; fi; count=0; for infile in %F; do count=$((count+1)); done; count=$((count*100)); progress=$(kdialog --title "$TITLEPROGRESS" --progressbar "" $(($count+1))); count=0; for infile in %F; do outfile="${infile%.*}.pdf"; choice=0; cancel=0; qdbus $progress setLabelText "$MSGWRITING $(basename "$outfile")" > /dev/null || cancel=1; if [ $cancel -eq 0 -a -f "$outfile" ]; then kdialog --title "$TITLEWARNING" --warningyesnocancel "$MSGEXISTING \n $outfile" --yes-label=$MSGOVERWRITE --no-label=$MSGSKIP ; choice=$?; fi; count=$((count+50)); qdbus $progress Set "" value $count > /dev/null || cancel=1; if [ $cancel -eq 0 -a $choice -eq 0 ]; then if [ $(identify -format '%[channels]' "$infile" |grep 'a'|wc -l) -gt 0 ]; then message=$(convert "$infile" -background white -alpha remove -alpha off - | img2pdf -o "$outfile" 2>&1); else message=$(img2pdf -o "$outfile" "$infile" 2>&1); fi; if [ $? -gt 0 ]; then kdialog --title "$TITLEERROR" --error "img2pdf: $message"; rm "$outfile" 2>/dev/null; else notify-send -i application-pdf -a "$TITLEDONE" -t 6000 "$MSGDONE"; fi; elif [ $choice -ge 2 ]; then cancel=1; fi; count=$((count+50)); qdbus $progress Set "" value $count > /dev/null || cancel=1; if [ $cancel -gt 0 ]; then notify-send -i application-pdf -a "$TITLECANCEL" -t 6000 "$MSGCANCEL"; rm -r "$tmpDir"; qdbus $progress close > /dev/null; exit 1; fi; done; qdbus $progress close > /dev/null; exit 0;
+grep: ./1507169/rocketdesigner: binary file matches
+./1495813/org.kde.plasma.kickoff/contents/ui/Kickoff.qml:                        executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ExposeAll"')
+./1494502/contents/ui/switch.sh:    qdbus org.kde.ksmserver /KSMServer logout 1 1 3
+./1493231/org.kde.plasma.taskmanager/contents/ui/ConfigBehavior.qml:            property string cmdReconfigure: 'qdbus org.kde.KWin /KWin reconfigure'
+./1483671/contents/ui/main.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 0 2')
+./1483671/contents/ui/main.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1483671/contents/ui/main.qml:        executable.exec('qdbus --system org.freedesktop.systemd1 /org/freedesktop/systemd1 org.freedesktop.systemd1.Manager.StartUnit kexec.target replace-irreversibly')
+./1483671/contents/ui/main.qml:        executable.exec('qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock')
+./1483671/contents/ui/main.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1483671/contents/ui/main.qml:         executable.exec('qdbus org.kde.Solid.PowerManagement /org/freedesktop/PowerManagement Suspend')
+./1483671/contents/ui/main.qml:         executable.exec('qdbus org.kde.Solid.PowerManagement /org/freedesktop/PowerManagement Hibernate')
+./1462622/com.github.varlesh.materia/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1462622/com.github.varlesh.materia/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1462614/com.github.varlesh.materia-light/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1462614/com.github.varlesh.materia-light/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef Set "" value 1
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef setLabelText "cryptsetup luksFormat --type luks2 '$FULLFILENAME'"
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef Set "" value 2
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef setLabelText "cryptsetup luksHeaderBackup '$FULLFILENAME' --header-backup-file '$FULLFILENAME.HeaderBackup'"
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef Set "" value 3
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef setLabelText "cryptsetup luksOpen '$FULLFILENAME' '$BASENAME'"
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef Set "" value 4
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef setLabelText "$MKFSCMD"
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef Set "" value 5
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef setLabelText "luksClose '$BASENAME'"
+./1457378/lukscontainerfile-format.sh:qdbus $dbusRef close
+./1450950/GridWM/contents/code/main.js: // qdbus org.kde.KWin /KWin supportInformation
+./1420222/org.kde.plasma.mailnag/contents/ui/main.qml:                    "qdbus --literal mailnag.MailnagService /mailnag/MailnagService GetMails")
+./1420222/org.kde.plasma.mailnag/contents/ui/main.qml:        count.exec("qdbus mailnag.MailnagService /mailnag/MailnagService GetMailCount")
+./1420222/org.kde.plasma.mailnag/contents/ui/main.qml:        check.exec("qdbus mailnag.MailnagService /mailnag/MailnagService CheckForMails")
+./1420222/org.kde.plasma.mailnag/contents/ui/main.qml:        mark.exec("qdbus mailnag.MailnagService /mailnag/MailnagService MarkMailAsRead " + ids)
+./1408433/org.kde.thermalMonitorFix/contents/code/model-utils.js:var UDISKS_DEVICES_CMD = 'qdbus --system org.freedesktop.UDisks2 | grep ' + UDISKS_PATH_START_WITH
+./1408433/org.kde.thermalMonitorFix/contents/code/model-utils.js:var UDISKS_TEMPERATURE_CMD_PATTERN = 'qdbus --system org.freedesktop.UDisks2 {path} org.freedesktop.UDisks2.Drive.Ata.SmartTemperature'
+./1387238/com.github.adhec.DynamicTheme/contents/ui/main.qml:                    str_command = str_command + "qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();print (allDesktops);for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = \"org.kde.image\";d.currentConfigGroup = Array(\"Wallpaper\", \"org.kde.image\", \"General\");d.writeConfig(\"Image\", \""+plasmoid.configuration.listWallpaper[index]+"\")}'; kwriteconfig5 --file ~/.config/kscreenlockerrc --group Greeter --group Wallpaper --group org.kde.image --group General --key Image \""+plasmoid.configuration.listWallpaper[index]+"\""
+./1384156/org.kpple.kppleMenu/contents/ui/config/configGeneral.qml:            placeholderText: i18n("qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock")
+./1384156/org.kpple.kppleMenu/contents/ui/config/configGeneral.qml:            placeholderText: i18n("qdbus org.kde.ksmserver /KSMServer logout 0 0 0")
+./1384066/contents/ui/main.qml:    connectedSources: ["qdbus org.workrave.Workrave"]
+./1384066/contents/ui/main.qml:  property string dbusDataCommand : 'qdbus org.workrave.Workrave  /org/workrave/Workrave/Core org.workrave.CoreInterface.{workraveTimerMethod} "{workraveTimerName}"'
+./1384066/contents/ui/main.qml:  property string dbusConfigCommand : 'qdbus org.workrave.Workrave  /org/workrave/Workrave/Core org.workrave.ConfigInterface.GetInt /timers/{workraveConfigName}/{workraveConfigKey}'
+./1383271/com.github.adhec.SwitchTheme/contents/ui/FullRepresentation.qml:                            str_command = str_command + "qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();print (allDesktops);for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = \"org.kde.image\";d.currentConfigGroup = Array(\"Wallpaper\", \"org.kde.image\", \"General\");d.writeConfig(\"Image\", \""+plasmoid.configuration.listWallpaper[index]+"\")}'; kwriteconfig5 --file ~/.config/kscreenlockerrc --group Greeter--group Wallpaper --group org.kde.image --group General --key Image \""+plasmoid.configuration.listWallpaper[index]+"\""
+./1367167/menuZ/contents/ui/CompactRepresentation.qml:        executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"')
+./1364107/contents/ui/nextwp.js:        var command = `qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript '
+./1364071/SimplePager/contents/ui/main.qml:        executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ShowDesktopGrid"')
+./1325685/contents/ui/main.qml:                            cmd.exec("qdbus org.kde.Solid.PowerManagement /org/kde/Solid/PowerManagement/Actions/BrightnessControl setBrightness "+realValue+";");
+./1325685/contents/ui/main.qml:                            cmd.exec("qdbus org.kde.Solid.PowerManagement /org/kde/Solid/PowerManagement/Actions/BrightnessControl setBrightness 1;");
+./1325685/contents/ui/main.qml:        text: "Components xrandr and qdbus are required. Please install the missing one in your package manager."
+./1324206/org.kde.plasma.navdexie/contents/ui/CompactRepresentation.qml:        executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"')
+./1324206/org.kde.plasma.navdexie/contents/ui/DashboardRepresentation.qml:        executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"')
+./1317165/EmojiRunner-2.3.0/EmojiRunnerCommands.khotkeys:CommandURL=qdbus org.kde.krunner /App org.kde.krunner.App.displaySingleRunner "emojirunner"
+./1317165/EmojiRunner-2.3.0/EmojiRunnerCommands.khotkeys:CommandURL=qdbus org.kde.krunner /App org.kde.krunner.App.querySingleRunner "emojirunner" "emoji "
+./1317165/EmojiRunner-2.3.0/README.md:`qdbus org.kde.krunner /App org.kde.krunner.App.querySingleRunner "emojirunner" "emoji "`
+./1308298/qdbus/qdbus.sh:QdbusNomeApplicazione=$(qdbus | grep -i $NomeFinestraAttiva | head -1 )
+./1308298/qdbus/qdbus.sh:QdbusPercorsoAzioni=$(qdbus $QdbusNomeApplicazione | grep action | head -1 )
+./1308298/qdbus/qdbus.sh:Azioni=$(qdbus $QdbusNomeApplicazione  | grep action  | cut -d'/' -f5 | sort )
+./1308298/qdbus/qdbus.sh:qdbus $QdbusNomeApplicazione $QdbusPercorsoAzioni/$Scelta   trigger
+./1308298/qdbus/qdbus.sh:QdbusPercorsoAzioni=$(qdbus $NomeApplicazionesenzapid-$PIDFinestraAttiva | grep action | head -1 )
+./1308298/qdbus/qdbus.sh:Azioni=$(qdbus $QdbusNomeApplicazione  | grep action  | cut -d'/' -f5 | sort  )
+./1308298/qdbus/qdbus.sh:qdbus $NomeApplicazionesenzapid-$PIDFinestraAttiva $QdbusPercorsoAzioni/$Scelta   trigger
+./1308298/qdbus/qdbus.sh:#kdialog --passivepopup "qdbus $NomeApplicazionesenzapid-$PIDFinestraAttiva $QdbusPercorsoAzioni/$Scelta   trigger"
+./1298955/com.pajuelo.plasmaConfSaver/contents/scripts/load.sh:qdbus org.kde.KWin /KWin reconfigure
+./1298956/yakuakehere.sh:qdbus 2> /dev/null | grep -q org.kde.yakuake &> /dev/null
+./1298956/yakuakehere.sh:       newSession=$(qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession)
+./1298956/yakuakehere.sh:       qdbus org.kde.yakuake /yakuake/tabs org.kde.yakuake.setTabTitle $newSession "$(basename "$dir")"
+./1298956/yakuakehere.sh:       terminalID=$(qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.terminalIdsForSessionId $newSession)
+./1298956/yakuakehere.sh:       qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.runCommandInTerminal $terminalID "cd \"$dir\""
+./1298956/yakuakehere.sh:       qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.runCommandInTerminal $terminalID "echo -en \"\ec\""
+./1298956/yakuakehere.sh:       qdbus org.kde.yakuake /yakuake/window toggleWindowState
+./1290999/latte_slideshow_wallpaper-0.1.1/contents/ui/LatteTracer.qml:        var command = 'qdbus org.kde.lattedock /Latte setBackgroundFromBroadcast ' + root.activityId + ' ' + Screen.name + ' "' + root.modelImage +'"';
+./1290999/latte_slideshow_wallpaper-0.1.1/contents/ui/LatteTracer.qml:        var command = 'qdbus org.kde.lattedock /Latte setBroadcastedBackgroundsEnabled ' + root.activityId + ' ' + lastScreenName + ' false';
+./1289644/com.github.davide-sd.ipaddress/contents/ui/LabelDelegate.qml:            executable.exec("qdbus org.kde.klipper /klipper setClipboardContents " + label.text)
+./1289593/contents/ui/Main.qml:    property var desktopCommand: 'NEXT=$(($(qdbus org.kde.KWin /KWin currentDesktop) - 1));MAX=$(wmctrl -d | wc -l);if [[ $NEXT -eq 0 ]]; then NEXT=$MAX; fi;NEXT=$(($NEXT - 1));wmctrl -r :ACTIVE: -t $NEXT; wmctrl -s $NEXT;'
+./1289593/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ShowDesktopGrid"')
+./1289588/contents/ui/Main.qml:    property var desktopCommand: 'NEXT=$(($(qdbus org.kde.KWin /KWin currentDesktop) + 1));MAX=$(wmctrl -d | wc -l);if [[ $NEXT -gt $MAX ]]; then NEXT=1; fi;NEXT=$(($NEXT - 1));wmctrl -r :ACTIVE: -t $NEXT; wmctrl -s $NEXT;'
+./1289588/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ShowDesktopGrid"')
+./1289173/contents/ui/Main.qml:    property var unlockHacky1: 'qdbus org.kde.kglobalaccel /component/plasmashell invokeShortcut "show dashboard"; '
+./1289173/contents/ui/Main.qml:    property var unlockHacky2: 'xdotool key alt+d l; qdbus org.kde.kglobalaccel /component/plasmashell invokeShortcut "show dashboard"'
+./1289173/contents/ui/Main.qml:    property var advancedScript_p1: 'qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript '
+./1289173/contents/ui/Main.qml:        executable.exec("qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'locked = true;'");
+./1289173/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + plasmascript + '"');
+./1289173/contents/ui/Main.qml:        executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + script + '"');
+./1289173/contents/ui/Main.qml:        //executable.exec("qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'locked = true;'");
+./1289173/contents/ui/Main.qml:        //qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "setImmutability('userImmutable');"
+./1289173/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ShowDesktopGrid"')
+./1289173/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + plasmascript + '"');
+./1289173/contents/ui/Main.qml:                    executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + plasmascript + '"');
+./1289173/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + plasmascript + '"');
+./1288430/shutdownOrSwitch/contents/ui/FullRepresentation.qml:                executable.exec("qdbus org.kde.ksmserver /KSMServer logout 0 1 3");
+./1288430/shutdownOrSwitch/contents/ui/FullRepresentation.qml:                executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2');
+./1288430/shutdownOrSwitch/contents/ui/FullRepresentation.qml:                executable.exec('qdbus org.kde.Solid.PowerManagement /org/freedesktop/PowerManagement Suspend');
+./1288430/shutdownOrSwitch/contents/ui/FullRepresentation.qml:                executable.exec('qdbus org.kde.Solid.PowerManagement /org/freedesktop/PowerManagement Hibernate');
+./1276675/casper/filesystem.manifest:qdbus 4:4.8.7+dfsg-7ubuntu1
+./1276675/casper/filesystem.manifest-desktop:qdbus 4:4.8.7+dfsg-7ubuntu1
+./1272885/KDE-DolphinServiceMenu-IPFS-master/dsm-ipfs:qdbus $dbusRef showCancelButton false
+./1272885/KDE-DolphinServiceMenu-IPFS-master/dsm-ipfs:qdbus $dbusRef close
+./1269113/contents/ui/Main.qml:    property var unlockHacky1: 'qdbus org.kde.kglobalaccel /component/plasmashell invokeShortcut "show dashboard"; '
+./1269113/contents/ui/Main.qml:    property var unlockHacky2: 'xdotool key alt+d l; qdbus org.kde.kglobalaccel /component/plasmashell invokeShortcut "show dashboard"'
+./1269113/contents/ui/Main.qml:    property var advancedScript_p1: 'qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript '
+./1269113/contents/ui/Main.qml:        executable.exec("qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'locked = true;'");
+./1269113/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + plasmascript + '"');
+./1269113/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[0]); ' + workingMode);
+./1269113/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[1]); ' + workingMode);
+./1269113/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[2]); ' + workingMode);
+./1269113/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[3]); ' + workingMode);
+./1269113/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[4]); ' + workingMode);
+./1269113/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[5]); ' + workingMode);
+./1269113/contents/ui/Main.qml:        onTriggered: executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[6]); ' + workingMode);
+./1269113/contents/ui/Main.qml:        executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + script + '"');
+./1269113/contents/ui/Main.qml:        //executable.exec("qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'locked = true;'");
+./1269113/contents/ui/Main.qml:        //qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "setImmutability('userImmutable');"
+./1269113/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ShowDesktopGrid"')
+./1269113/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[0]); ' + workingMode);
+./1269113/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[0]); ' + workingMode)
+./1269113/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[1]); ' + workingMode);
+./1269113/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[1]); ' + workingMode)
+./1269113/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[2]); ' + workingMode);
+./1269113/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[2]); ' + workingMode)
+./1269113/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[3]); ' + workingMode);
+./1269113/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[3]); ' + workingMode)
+./1269113/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[4]); ' + workingMode);
+./1269113/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[4]); ' + workingMode)
+./1269113/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[5]); ' + workingMode);
+./1269113/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[5]); ' + workingMode)
+./1269113/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[6]); ' + workingMode);
+./1269113/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[6]); ' + workingMode)
+./1269113/contents/ui/Main.qml:            executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + plasmascript + '"');
+./1269113/contents/ui/Main.qml:                    executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + plasmascript + '"');
+./1269113/contents/ui/Main.qml:                executable.exec('qdbus org.kde.plasmashell /PlasmaShell evaluateScript ' + '"' + plasmascript + '"');
+./1269434/Conky-Easy/.lua/basic/basic.lua:                      station = conky_parse("${execi 3 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray net.sourceforge.radiotray.getCurrentRadio}")
+./1269434/Conky-Easy/.lua/basic/basic.lua:                              local playing = conky_parse("${execi 3 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray getCurrentMetaData | fold -s -w 50}")
+./1269434/Conky-Easy/.lua/basic/basic.lua:              station = conky_parse("${execi 3 qdbus com.github.radiotray_ng /com/github/radiotray_ng com.github.radiotray_ng.get_player_state | grep 'station' | awk 'BEGIN {FS=\":\"\};\{print $2\}'| tr -d '\",' }")
+./1269434/Conky-Easy/.lua/basic/basic.lua:              artist = conky_parse("${execi 3 qdbus com.github.radiotray_ng /com/github/radiotray_ng com.github.radiotray_ng.get_player_state | grep -i 'artist' | awk 'BEGIN {FS=\":\"\};\{print $2\}' | tr -d '\",'}")
+./1269434/Conky-Easy/.lua/basic/basic.lua:              song = conky_parse("${execi 3 qdbus com.github.radiotray_ng /com/github/radiotray_ng com.github.radiotray_ng.get_player_state | grep -i 'title' | awk 'BEGIN {FS=\":\"\};\{print $2\}' | tr -d '\",'}")
+./1269434/Conky-Easy/.lua/basic/basic.lua:              --bitrate = conky_parse("${execi 3 qdbus com.github.radiotray_ng /com/github/radiotray_ng com.github.radiotray_ng.get_player_state | grep -i 'bitrate' | awk 'BEGIN {FS=\":\"\};\{print $2\}' | tr -d '\",'}")
+./1269434/Conky-Easy/.lua/basic/basic.lua:                      local playing3 = conky_parse("${execi 3 qdbus org.gnome.UPnP.MediaServer2.Rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata}")
+./1269434/Conky-Easy/.lua/basic/basic.lua:                      local playing3 = conky_parse("${execi 3 qdbus org.mpris.MediaPlayer2.audacious /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata}")
+./1266540/contents/script/script.sh:qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[2]); if (panel.height > 0) {panel.height = panel.height * -1;}";
+./1266537/contents/script/script.sh:qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[6]); if (panel.height > 0) {panel.height = panel.height * -1;}";
+./1266541/contents/script/script.sh:qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[3]); if (panel.height > 0) {panel.height = panel.height * -1;}";
+./1266542/contents/script/script.sh:qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[4]); if (panel.height > 0) {panel.height = panel.height * -1;}";
+./1266543/contents/script/script.sh:qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[5]); if (panel.height > 0) {panel.height = panel.height * -1;}";
+./1266538/contents/script/script.sh:qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[1]); if (panel.height > 0) {panel.height = panel.height * -1;}";
+./1266534/contents/script/script.sh:qdbus org.kde.plasmashell /PlasmaShell evaluateScript "panel = panelById(panelIds[0]); if (panel.height > 0) {panel.height = panel.height * -1;}";
+./1265005/pdf-afterscan/pdf-afterscan.gui.sh:   qdbus ${1} org.freedesktop.DBus.Properties.Set \
+./1265005/pdf-afterscan/pdf-afterscan.gui.sh:           if ! qdbus ${dialog} org.kde.kdialog.ProgressDialog.setLabelText \
+./1259484/install.sh:qdbus org.kde.KWin /KWin reconfigure
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog:         { "${kdialog_bin}" --title "${!msg_title}" --icon configure --error "${msg_common_name_error}" && qdbus $dbus_ref close && exit 2; }
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog:         { "${kdialog_bin}" --title "${!msg_title}" --icon configure --error "${msg_common_name_error}" && qdbus $dbus_ref close && exit 2; }
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog: qdbus $dbus_ref showCancelButton true
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog:         [ "$(qdbus $dbus_ref wasCancelled)" = "true" ] && \
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog:                 qdbus $dbus_ref close && "${kdialog_bin}" --title "${!msg_title}" --passivepopup "${msg_common_abort}" 5 && exit 2;
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog:         qdbus $dbus_ref setLabelText "${msg_common_progress_text}"
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog:                 { qdbus $dbus_ref close; "${kdialog_bin}" --icon configure --title "${!msg_finish_title}" --detailederror "${msg_common_finish_error}" "${msg}"; exit 2; }
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog:         qdbus $dbus_ref org.freedesktop.DBus.Properties.Set org.kde.kdialog.ProgressDialog value $processed
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog: qdbus $dbus_ref close
+./1231579/kde-service-menu-reimage-2.4_all/bin/reimage-kdialog:         { qdbus $dbus_ref close; "${kdialog_bin}" --icon configure --title "${!msg_finish_title}" --detailederror "${msg_common_finish_error}" "${msg}"; exit 2; }
+./1229162/com.github.varlesh.materia-dark/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 1 2')
+./1229162/com.github.varlesh.materia-dark/contents/lockscreen/LockScreenUi.qml:        executable.exec('qdbus org.kde.ksmserver /KSMServer logout 0 2 2')
+./1219768/bash-theme-installer/.bash/functions.sh:                      qdbus $dbus_pb org.kde.kdialog.ProgressDialog.close
+./1219768/bash-theme-installer/.bash/functions.sh:                      qdbus $dbus_pb org.kde.kdialog.ProgressDialog.setLabelText "$3" &> /dev/null
+./1219768/bash-theme-installer/.bash/functions.sh:                      qdbus $dbus_pb org.freedesktop.DBus.Properties.Set org.kde.kdialog.ProgressDialog value $2  &> /dev/null
+./1219534/Conky_Workspace_Indicator for KDE/conky/workspace.sh:DESK=`qdbus org.kde.kwin /KWin currentDesktop`
+./1219508/time_music:nowPlaying="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata 2>/dev/null)"
+./1219508/time_music:        version="$(qdbus org.kde.amarok / org.freedesktop.MediaPlayer.Identity)"
+./1219508/time_music:        nlength="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.PositionGet)"
+./1219508/time_music:#echo ${message} |  while read line; do qdbus org.kde.konversation /irc say $SERVER "$TARGET" "$line"; done
+./1219508/amarok get metadata.sh:nowPlaying="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata 2>/dev/null)"
+./1219508/amarok get metadata.sh:        version="$(qdbus org.kde.amarok / org.freedesktop.MediaPlayer.Identity)"
+./1219508/amarok get metadata.sh:        nlength="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.PositionGet)"
+./1219508/amarok get metadata.sh:#echo ${message} |  while read line; do qdbus org.kde.konversation /irc say $SERVER "$TARGET" "$line"; done
+./1219508/README:$alignr${exec (nowPlaying="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata 2>/dev/null)" && echo [ "$(echo "$nowPlaying" | sed -ne 's/^title: \(.*\)$/\1/p')")} ] --+
+./1219508/README:$alignr${exec (nowPlaying="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata 2>/dev/null)" && echo [ "$(echo "${nowPlaying}" | sed -ne 's/^artist: \(.*\)$/\1/p')" ])} --+
+./1219508/README:$alignr${exec (nowPlaying="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata 2>/dev/null)" && echo [ "$(echo "${nowPlaying}" | sed -ne 's/^album: \(.*\)$/\1/p')" ])} --+
+./1219508/Monochrome_simple:$alignr${exec (nowPlaying="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata 2>/dev/null)" && echo [ "$(echo "$nowPlaying" | sed -ne 's/^title: \(.*\)$/\1/p')")} ] --+
+./1219508/Monochrome_simple:$alignr${exec (nowPlaying="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata 2>/dev/null)" && echo [ "$(echo "${nowPlaying}" | sed -ne 's/^artist: \(.*\)$/\1/p')" ])} --+
+./1219508/Monochrome_simple:$alignr${exec (nowPlaying="$(qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata 2>/dev/null)" && echo [ "$(echo "${nowPlaying}" | sed -ne 's/^album: \(.*\)$/\1/p')" ])} --+
+./1190687/basicactive/basicactive.lua:                  station = conky_parse("${execi 3 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray net.sourceforge.radiotray.getCurrentRadio}")
+./1190687/basicactive/basicactive.lua:                          local playing = conky_parse("${execi 3 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray getCurrentMetaData| fold -s-w 50}")
+./1190687/basicactive/basicactive.lua:                  local playing3 = conky_parse("${execi 3 qdbus org.gnome.UPnP.MediaServer2.Rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata}")
+./1190687/basicactive/basicactive.lua:                  local playing3 = conky_parse("${execi 3 qdbus org.mpris.MediaPlayer2.audacious /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata}")
+./1181138/ArchUpdater:    qdbus org.kde.yakuake /Sessions/$2 runCommand "$command"
+./1181039/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ExposeAll"')
+./1181039/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"')
+./1181039/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ExposeClass"')
+./1181039/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ShowDesktopGrid"')
+./1181039/contents/ui/Main.qml:         executable.exec('qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Parachute"')
+./1181039/contents/ui/lib/DesktopEffectToggle.qml:              property string readStateCommand: 'qdbus org.kde.KWin /Effects isEffectLoaded ' + effectId
+./1181039/contents/ui/lib/DesktopEffectToggle.qml:              property string toggleStateCommand: 'qdbus org.kde.KWin /Effects toggleEffect ' + effectId
+./1181039/contents/ui/lib/DesktopEffectToggle.qml:              // For some reason, the toggleEffect qdbus function does not save to kwinrc.
+grep: ./1173470/usr/bin/qdbus: binary file matches
+./1170150/Conky/.lua/basic.lua:                 station = conky_parse("${execi 3 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray net.sourceforge.radiotray.getCurrentRadio}")
+./1170150/Conky/.lua/basic.lua:                         local playing = conky_parse("${execi 3 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray getCurrentMetaData| fold -s -w 50}")
+./1170150/Conky/.lua/basic.lua:                 local playing3 = conky_parse("${execi 3 qdbus org.gnome.UPnP.MediaServer2.Rhythmbox /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata}")
+./1170150/Conky/.lua/basic.lua:                 local playing3 = conky_parse("${execi 3 qdbus org.mpris.MediaPlayer2.audacious /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Metadata}")
+./1160019/kde-servicemenu-transfersh-0.7/transfer.sh:if ( pidof klipper >/dev/null && command_exists qdbus ) || (pidof klipper >/dev/null && command_exists dcop ) || pidof clipit >/dev/null|| command_exists xclip || command_exists xsel
+./1160019/kde-servicemenu-transfersh-0.7/transfer.sh:    pidof klipper > /dev/null && command_exists qdbus && qdbus org.kde.klipper /klipper org.kde.klipper.klipper.setClipboardContents "$link" > /dev/null 2>&1
+./1158032/dynamicVirtualDesktops/README.md:qdbus org.kde.KWin /KWin reconfigure
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                qdbus $ProgressPDF showCancelButton true >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                if $(qdbus $ProgressPDF wasCancelled);then
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                    qdbus $ProgressPDF close >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                    qdbus $ProgressPDF showCancelButton true >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                    qdbus $ProgressPDF value $Cal >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                qdbus $ProgressPDF setLabelText "$msg_processing_file $Cal/$HowManyArgs" >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                qdbus $ProgressPDF value $Cal >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                if $(qdbus $ProgressPDF wasCancelled);then
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                    qdbus $ProgressPDF close >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                    qdbus $ProgressPDF showCancelButton true >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                    qdbus $ProgressPDF value $Cal >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                [ $Cal -le $HowManyArgs ] && qdbus $ProgressPDF setLabelText "$msg_processing_file $Cal/$HowManyArgs" >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:                qdbus $ProgressPDF close >/dev/null
+./1153421/OfficeConverter/data/bin/officeconverter_servicemenu:    $InKonsole && qdbus org.kde.konsole $KONSOLE_DBUS_SESSION setTitle 1 "$konsole_title" &>/dev/null
+./1153489/usr/share/doc/HTML/en/kvkbd/index.docbook:qdbus org.kde.kvkbd /MainApplication quit
+./1135856/gnome_media_keys-2.0-1/listner.py:                            os.system("qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.Pause")
+./1135856/gnome_media_keys-2.0-1/listner.py:                            os.system("qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.Play")
+./1135856/gnome_media_keys-2.0-1/listner.py:                    os.system("qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.Pause")
+./1135856/gnome_media_keys-2.0-1/listner.py:                    os.system("qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.Stop")
+./1135856/gnome_media_keys-2.0-1/listner.py:                    os.system("qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.Next")
+./1135856/gnome_media_keys-2.0-1/listner.py:                    os.system("qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.Prev")
+./1135851/sleepy/action.js:    var suspend = "qdbus --system org.freedesktop.Hal /org/freedesktop/Hal/devices/computer org.freedesktop.Hal.Device.SystemPowerManagement.Suspend 1";
+./1135851/sleepy/action.js:    var hibernate = "qdbus --system org.freedesktop.Hal /org/freedesktop/Hal/devices/computer org.freedesktop.Hal.Device.SystemPowerManagement.Hibernate";
+./1135851/sleepy/action.js:    var shutdown = "qdbus --system org.freedesktop.Hal /org/freedesktop/Hal/devices/computer org.freedesktop.Hal.Device.SystemPowerManagement.Shutdown";
+./1135851/sleepy/action.js:    var lockScreen = "qdbus org.freedesktop.ScreenSaver /ScreenSaver org.freedesktop.ScreenSaver.Lock";
+./1135851/sleepy/action.js:     var quitDbus = "qdbus org.kde.amarok /MainApplication org.kde.KApplication.quit";
+./1135819/MusicQuiz/main (còpia).js:    script.start("qdbus org.kde.amarok /amarok/MainWindow hide");
+./1135819/MusicQuiz/main (còpia).js:    script.start("qdbus org.kde.amarok /amarok/MainWindow show");
+./1135819/MusicQuiz/gui.js:     script.start("qdbus org.kde.amarok /amarok/MainWindow hide");
+./1135819/MusicQuiz/gui.js:     script.start("qdbus org.kde.amarok /amarok/MainWindow show");
+./1135819/MusicQuiz/main.js:    script.start("qdbus org.kde.amarok /amarok/MainWindow hide");
+./1135819/MusicQuiz/main.js:    script.start("qdbus org.kde.amarok /amarok/MainWindow show");
+./1135806/good_night/main.js:      process.start("/usr/bin/qdbus org.kde.ksmserver /KSMServer logout 0 2 2");
+./1135806/good_night/main.js:      process.start("/usr/bin/qdbus org.freedesktop.PowerManagement /org/freedesktop/PowerManagement org.freedesktop.PowerManagement.Hibernate");
+./1135806/good_night/main.js:      process.start("/usr/bin/qdbus org.freedesktop.PowerManagement /org/freedesktop/PowerManagement org.freedesktop.PowerManagement.Suspend");
+./1135756/HamsiCover/HamsiCover.py:                songValues = os.popen("qdbus org.kde.amarok /Player GetMetadata").read().split("\n")[:-1]
+./1135751/amarok-good-night/Command.js:    var cmd = "qdbus " +
+./1135751/amarok-good-night/Command.js:    var cmd = "qdbus " +
+./1135751/amarok-good-night/Command.js:    var cmd = "qdbus " +
+./1135751/amarok-good-night/Command.js:    var cmd = "qdbus " +
+./1135751/amarok-good-night/pm-scripts/can-hibernate.sh:RET=$(qdbus org.freedesktop.PowerManagement /org/freedesktop/PowerManagement org.freedesktop.PowerManagement.CanHibernate)
+./1135751/amarok-good-night/pm-scripts/can-suspend.sh:RET=$(qdbus org.freedesktop.PowerManagement /org/freedesktop/PowerManagement org.freedesktop.PowerManagement.CanSuspend)
+./1135748/HamsiSinger/test.py:#if os.popen("qdbus org.kde.kopete").read()=="StdHata: Service 'org.kde.kopete' does not exist.":
+./1135748/HamsiSinger/HamsiSinger.py:    if len(os.popen("qdbus org.kde.kopete").readlines())<2:
+./1135748/HamsiSinger/HamsiSinger.py:                songValues = os.popen("qdbus org.kde.amarok /Player GetMetadata").read().split("\n")[:-1]
+./1135748/HamsiSinger/HamsiSinger.py:                os.popen("qdbus org.kde.kopete /Kopete " + _messageName + " " + Settings.correctForConsole(_message))
+./1135748/HamsiSinger/HamsiSinger.py:                            os.popen("qdbus org.kde.kopete /Kopete setIdentityAvatar " + strTempImageFile + " " + identityName)
+./1135748/HamsiSinger/HamsiSinger.py:                return os.popen("qdbus org.kde.kopete /Kopete identities").read().split("\n")[:-1]
+./1135748/HamsiSinger/HamsiSinger.py:                length = os.popen("qdbus org.kde.amarok /Player PositionGet").read()[:-1]
+./1135655/amarok-webui/amarokctrl.js:/*    var shutdown = "qdbus --system org.freedesktop.Hal /org/freedesktop/Hal/devices/computer org.freedesktop.Hal.Device.SystemPowerManagement.Shutdown";
+./1135655/amarok-webui/amarokctrl.js:    process.start("/usr/bin/qdbus org.kde.ksmserver /KSMServer logout 0 2 2");*/
+./1135634/AmarokScreenSaver/AmarokScreenSaver.sh:       idle=$(qdbus org.kde.krunner /ScreenSaver GetSessionIdleTime)
+./1135634/AmarokScreenSaver/AmarokScreenSaver.sh:                       qdbus org.kde.krunner /ScreenSaver Lock
+./1135634/AmarokScreenSaver/AmarokScreenSaver.sh:               qdbus org.kde.krunner /ScreenSaver SetActive true
+./1135420/sleepyKNCH/action.js:    var suspend = "qdbus org.freedesktop.PowerManagement /org/freedesktop/PowerManagement org.freedesktop.PowerManagement.Suspend";
+./1135420/sleepyKNCH/action.js:    var hibernate = "qdbus org.freedesktop.PowerManagement /org/freedesktop/PowerManagement org.freedesktop.PowerManagement.Hibernate";
+./1135420/sleepyKNCH/action.js:    var shutdown = "qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 1 2 2";
+./1135420/sleepyKNCH/action.js:    var lockScreen = "qdbus org.freedesktop.ScreenSaver /ScreenSaver org.freedesktop.ScreenSaver.Lock";
+./1135420/sleepyKNCH/action.js: var quitDbus = "qdbus org.kde.amarok /MainApplication org.kde.KApplication.quit";
+./1132346/pdfviewer/app/app-standalone.pro:qdbus {
+./1132346/pdfviewer/app/app.pro:qdbus {
+./1132346/pdfviewer/app/qmake/pdfviewerconfig.pri:CONFIG += qdbus # this is needed for not opening new windows when "forward search" using synctex is triggered
+./1132346/pdfviewer/app/src/src-standalone.pri:qdbus {
+./1132346/pdfviewer/app/src/src.pri:qdbus {
+./1132116/eta-keyboard-debian-0.3.2/src/main.cpp:            return system("qdbus org.eta.virtualkeyboard /VirtualKeyboard "
+./1131920/contents/code/SettingsDialog/templates.py:/usr/bin/qdbus org.kde.kmail /KMail org.kde.kmail.kmail.selectFolder /1287421332/Inbox; /usr/bin/wmctrl -x -R kmail\n\
+./1131920/contents/code/SettingsDialog/templates.py:/usr/bin/qdbus org.kde.kmail /KMail org.kde.kmail.kmail.folderList'
+./1131920/contents/code/SettingsDialog/EXAMPLES.py:/usr/bin/qdbus org.kde.kmail /KMail org.kde.kmail.kmail.selectFolder /1287421332/Inbox; /usr/bin/wmctrl -x -R kmail\n\
+./1131920/contents/code/SettingsDialog/EXAMPLES.py:/usr/bin/qdbus org.kde.kmail /KMail org.kde.kmail.kmail.folderList\n\
+./1131916/dianara-v1.3.4/README:   it with tools such as qdbus or dbus-send. It offers methods like 'toggle'
+./1131916/dianara-v1.3.4/manual/dianara.1:  it with tools such as qdbus or dbus-send. It offers methods like 'toggle'
+./1131916/dianara-v1.3.4/CHANGELOG:   such as scripts, using tools like qdbus or dbus-send.
+./1131594/EyeRescue-master/src/mainwindow.cpp:        "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock",
+./1131594/EyeRescue-master/src/mainwindow.cpp:        "qdbus org.gnome.ScreenSaver /ScreenSaver Lock",
+./1131086/piQtureGLide/qgliv.cpp:    wallpaperCmd = settings.value("SetWallpaperCmd", "qdbus org.kde.be.shell /Desktop setWallpaper \"%f\" 0").toString();
+./1128190/kfilefactory-0.1.1/kfilefactory_kde4.pl:system("qdbus $dbusRef /ProgressDialog showCancelButton true");
+./1128190/kfilefactory-0.1.1/kfilefactory_kde4.pl:    if ( `qdbus $dbusRef /ProgressDialog wasCancelled` eq "true\n" ) {
+./1128190/kfilefactory-0.1.1/kfilefactory_kde4.pl:      system("qdbus $dbusRef /ProgressDialog close");
+./1128190/kfilefactory-0.1.1/kfilefactory_kde4.pl:    system("qdbus $dbusRef /ProgressDialog Set \"\" value $percent");
+./1128190/kfilefactory-0.1.1/kfilefactory_kde4.pl:system("qdbus $dbusRef /ProgressDialog close");
+./1127369/osdvolume/README: qdbus org.osd.volume /Volcontrol org.OSD.Volume.showdec
+./1127369/osdvolume/README: qdbus org.osd.volume /Volcontrol org.OSD.Volume.showinc
+./1127369/osdvolume/README: "qdbus org.osd.volume /Volcontrol"
+./1127334/youtube-dl-applet/youtube-dl-applet:    qdbus_cmd="qdbus $progr_serv $progr_path org.kde.kdialog.ProgressDialog"
+./1127245/SleepSafe/sleepsafe.sh:qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock
+./1126486/CaptureDeviceTray/README:qdbus org.kde.capturedevice /CaptureDevice org.kde.CaptureDevice.SwitchState
+./1126486/CaptureDeviceTray/README:qdbus org.kde.kmix /Mixer0 org.kde.KMix.setRecordSource Capture:0 [True|False]
+./1112548/kwin-script-quick-tile-to-center/README:        qdbus org.kde.KWin /Scripting loadScript ~/.kde4/share/apps/kwin/scripts/quickTileToCenter/contents/code/main.js; qdbus org.kde.KWin /Scripting start
+./1112543/kwin-script-onlyOneActiveWindow-1.0/README.md:    state=`qdbus org.kde.kwin /Scripting isScriptLoaded onlyOneActiveWindow`
+./1112543/kwin-script-onlyOneActiveWindow-1.0/README.md:    qdbus org.kde.kwin /Scripting start
+./1111162/.conkyrc_orange:${color2}Station:${color} ${execi 15 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray net.sourceforge.radiotray.getCurrentRadio}
+./1111162/.conkyrc_orange:${execi 15 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray getCurrentMetaData| fold -s -w35}
+./1111140/Conky/steel_amber/config/conkyrc4:${goto 25}${color1}${scroll 11 ${execi 15 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray net.sourceforge.radiotray.getCurrentRadio}}${color}
+./1111140/Conky/steel_amber/config/conkyrc4:${goto 30}${color1}${scroll 11 ${execi 15 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray getCurrentMetaData| fold -s -w35}}
+./1111140/Conky/steel_green/config/conkyrc4:${goto 25}${color1}${scroll 11 ${execi 15 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray net.sourceforge.radiotray.getCurrentRadio}}${color}
+./1111140/Conky/steel_green/config/conkyrc4:${goto 30}${color1}${scroll 11 ${execi 15 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray getCurrentMetaData| fold -s -w35}}
+./1111140/Conky/steel_blue/config/conkyrc4:${goto 25}${color1}${scroll 11 ${execi 15 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray net.sourceforge.radiotray.getCurrentRadio}}${color}
+./1111140/Conky/steel_blue/config/conkyrc4:${goto 30}${color1}${scroll 11 ${execi 15 qdbus net.sourceforge.radiotray /net/sourceforge/radiotray getCurrentMetaData| fold -s -w35}}
+./1111057/Conky_Gogglesmm/conkyrc_nowplaying:${else}${if_match ${exec qdbus org.mpris.gogglesmm /Player org.freedesktop.MediaPlayer.GetCaps}==40}${font Analecta:size=12}No song playing${font}
+./1111057/Conky_Gogglesmm/conkyrc_nowplaying:${else}${execbar echo "$(($(qdbus org.mpris.gogglesmm /Player org.freedesktop.MediaPlayer.PositionGet)/1000))/$(echo $(qdbus org.mpris.gogglesmm/Player org.freedesktop.MediaPlayer.GetMetadata) | cut -d':' -f4 | rev | cut -d' ' -f2- | rev | cut -d' ' -f2-)*100" | bc -l}
+./1111057/Conky_Gogglesmm/conkyrc_nowplaying:${font Analecta:size=12}${exec echo $(qdbus org.mpris.gogglesmm /Player org.freedesktop.MediaPlayer.GetMetadata) | cut -d':' -f5 | rev | cut -d'' -f2- | rev | cut -d' ' -f2-}
+./1111057/Conky_Gogglesmm/conkyrc_nowplaying:${exec echo $(qdbus org.mpris.gogglesmm /Player org.freedesktop.MediaPlayer.GetMetadata) | cut -d':' -f2 | rev | cut -d' ' -f2- | rev | cut -d' ' -f2-}
+./1111057/Conky_Gogglesmm/conkyrc_nowplaying:${exec echo $(qdbus org.mpris.gogglesmm /Player org.freedesktop.MediaPlayer.GetMetadata) | cut -d':' -f3 | rev | cut -d' ' -f2- | rev | cut -d' ' -f2-}${font}$endif$endif
+./1105315/amarok.theme:image x=30 y=14  sensor=program program="[ `qdbus org.kde.amarok /Player GetMetadata | grep arturl | cut -d : -f 2` ] && convert `qdbus org.kde.amarok /Player GetMetadata |grep arturl | cut -d : -f 3 | cut -c 3-` -resize 157x157! /tmp/img.png && echo /tmp/img.png;[ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ] && echo image/lastfm.png" interval=5000
+./1105315/amarok.theme:#clickarea x=14 y=14 w=165 h=150 path="qdbus org.kde.amarok /amarok/MainWindow showHide"
+./1105315/amarok.theme:clickarea x=0 y=0 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1105315/amarok.theme:clickarea x=17 y=0 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1105315/amarok.theme:clickarea x=34 y=0 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1105315/amarok.theme:clickarea x=51 y=0 h=17 w=17 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1105315/amarok.theme:clickarea x=68 y=0 w=17 h=17 preview=false onclick="[ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ] && : || qdbus org.kde.amarok /Player Next" name="Next"
+./1105315/amarok.theme:clickarea x=85 y=0 w=17 h=17 onclick="qdbus org.kde.amarok /Player VolumeSet $((`qdbus org.kde.amarok /Player VolumeGet`-3))"
+./1105315/amarok.theme:clickarea x=102 y=0 w=17 h=17 onclick="qdbus org.kde.amarok /Player VolumeSet $((`qdbus org.kde.amarok /Player VolumeGet`+3))"
+./1105315/amarok.theme:text x=0 y=0 sensor=program program="artist=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 artist: | cut -c 9- | sed -e 's/.*/\U&/'`;[ `echo $artist | wc -c` -lt 24 ] && echo $artist || echo `echo $artist | cut -c -20`..." fontsize=16 font="Y2K Neophyte" align="center" interval=5000
+./1105315/amarok.theme:text x=0 y=20 sensor=program program="title=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 title: | cut -c 7- | sed -e 's/^[ \t]*//'`;[ `echo $title |  wc -c` -lt 37 ] && echo $title || echo `echo $title | cut -c -33`..." fontsize=12 align="center"interval=5000
+./1105315/amarok.theme:text x=0 y=35 sensor=program program="album=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 album: | cut -c 7- | sed -e 's/^[ \t]*//'`;[ `echo $album |  wc -c` -lt 37 ] && echo $album || echo `echo $album | cut -c -33`..." align="center"interval=5000
+./1105315/amarok.theme:#text x=0 y=49 sensor=program program="milTime=`qdbus org.kde.amarok /Player PositionGet`;[ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60))"  interval=1000 align="right"
+./1105311/EasyMonitor.theme:qdbus $dbusRef setLabelText 'Downloading Easy Monitor skz archive';\
+./1105311/EasyMonitor.theme:qdbus $dbusRef showCancelButton true;\
+./1105311/EasyMonitor.theme:$(wget --progress=dot -O EasyMonitor.zip $File_skz 2>&1 | fgrep --line-buffered '%' | sed -u -r 's:.* ([0-9]+)% .*:\1:'| while read get_procent ; do qdbus $dbusRef Set '' 'value' $get_procent && [ $(qdbus $dbusRef wasCancelled) = 'true' ] && { kdialog --passivepopup 'Download Canceled' 8 ; kill $(ps aux | grep 'wget --progress=dot -O EasyMonitor.zip'| grep -v grep | tr -s ' ' ' ' | cut -f2 -d' ');break;}; done );\
+./1105311/EasyMonitor.theme:[ $(qdbus $dbusRef wasCancelled) = 'true' ] && { qdbus $dbusRef close; cd ../; rm -fr EasyMonitor_install; exit 0 ;};\
+./1105311/EasyMonitor.theme:qdbus $dbusRef close;\
+./1105311/themes/scripts/top_info.sh:# qdbus org.kde.konsole $KONSOLE_DBUS_WINDOW
+./1105311/themes/EM_Amarok.theme:text   x=25    y=2     color=0,255,0   sensor=program  program="qdbus org.kde.amarok /Player GetMetadata | grep title:; qdbus org.kde.amarok /Player GetMetadata | grep artist:"    interval=1000
+./1105311/themes/EM_Amarok.theme:text   x=30    y=26    color=128,128,255       sensor=program  program="qdbus org.kde.amarok /Player GetMetadata | grep  time:| tail -n1 |awk '{print $2}'"interval=1000
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Script_Runner.theme EM_Script_Runner.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Script_Runner.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_File_System_Backup.theme EM_File_System_Backup.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_File_System_Backup.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Edit_System_Files.theme EM_Edit_System_Files.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Edit_System_Files.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Qemu_Install_Systems.theme EM_Qemu_Install_Systems.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Qemu_Install_Systems.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Big_Areo_0.theme EM_Big_Areo_0.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Big_Areo_0.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Big_Areo_1.theme EM_Big_Areo_1.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Big_Areo_1.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Big_Areo_2.theme EM_Big_Areo_2.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Big_Areo_2.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Big_Tech_1.theme EM_Big_Tech_1.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Big_Tech_1.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_System.theme EM_System.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_System.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Cpu_Single_All.theme EM_Cpu_Single_All.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Cpu_Single_All.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Cpu_Single_Core.theme EM_Cpu_Single_Core.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Cpu_Single_Core.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Cpu_Multi_Core.theme EM_Cpu_Multi_Core.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Cpu_Multi_Core.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Cpu_Octa_Thread.theme EM_Cpu_Octa_Thread.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Cpu_Octa_Thread.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Cpu_Core_0.theme EM_Cpu_Core_0.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Cpu_Core_0.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Cpu_Core_1.theme EM_Cpu_Core_1.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Cpu_Core_1.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Memory.theme EM_Memory.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Memory.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Gpu.theme EM_Gpu.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Gpu.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Gpu_Ati.theme EM_Gpu_Ati.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Gpu_Ati.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Filesystem.theme EM_Filesystem.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Filesystem.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Net_Eth0_Interface.theme EM_Net_Eth0_Interface.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Net_Eth0_Interface.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Net_Eth1_Interface.theme EM_Net_Eth1_Interface.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Net_Eth1_Interface.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Net_Wlan0_Interface.theme EM_Net_Wlan0_Interface.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Net_Wlan0_Interface.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Net_WlanX_Interface.theme EM_Net_WlanX_Interface.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Net_WlanX_Interface.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Netstat_TCP.theme EM_Netstat_TCP.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Netstat_TCP.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Netstat_UDP.theme EM_Netstat_UDP.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Netstat_UDP.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Top.theme EM_Top.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Top.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Battery.theme EM_Battery.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Battery.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Hardware.theme EM_Hardware.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Hardware.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Scan.theme EM_Scan.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Scan.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Amarok.theme EM_Amarok.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Amarok.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Net_Connections.theme EM_Net_Connections.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Net_Connections.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_Notes.theme EM_Notes.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_Notes.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_About.theme EM_About.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EM_About.theme.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication openNamedTheme ./EasyMonitor.theme EasyMonitor.theme 0
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /MainApplication closeTheme EasyMonitor.theme
+./1105311/run_themes.sh:        qdbus org.kde.superkaramba /SuperKaramba quitSuperKaramba
+./1105311/run_themes.sh:        #qdbus org.kde.superkaramba /MainApplication openNamedTheme ./themes/EM_About.theme EM_About.theme 0
+./1105276/Phenom-GT-Monitor/Phenom-GT-Monitor.theme:text x=107 y=22 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=3000
+./1105276/Phenom-GT-Monitor/Phenom-GT-Monitor.theme:text x=107 y=34 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=3000
+./1105276/Phenom-GT-Monitor/Phenom-GT-Monitor.theme:text x=107 y=46 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=3000
+./1105276/Phenom-GT-Monitor/Phenom-GT-Monitor.theme:clickarea x=44 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1105276/Phenom-GT-Monitor/Phenom-GT-Monitor.theme:clickarea x=77 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1105276/Phenom-GT-Monitor/Phenom-GT-Monitor.theme:clickarea x=110 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1105276/Phenom-GT-Monitor/Phenom-GT-Monitor.theme:clickarea x=143 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1105276/Phenom-GT-Monitor/Phenom-GT-Monitor.theme:clickarea x=176 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1105180/amarok/cover.sh:if [ `qdbus org.kde.amarok /Player GetMetadata | grep arturl | cut -d : -f 2` ];
+./1105180/amarok/cover.sh:convert "`qdbus org.kde.amarok /Player GetMetadata |grep arturl | cut -d : -f 3 | cut -c 3- | sed "s/%20/ /g"`" -resize 114x114! /tmp/img.png
+./1105180/amarok/cover.sh:if [ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ];
+./1105180/amarok/amarok.theme:clickarea x=23 y=13 w=114 h=114 onclick="qdbus org.kde.amarok /amarok/MainWindow showHide"
+./1105180/amarok/amarok.theme:clickarea x=0 y=0 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1105180/amarok/amarok.theme:clickarea x=17 y=0 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1105180/amarok/amarok.theme:clickarea x=34 y=0 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1105180/amarok/amarok.theme:clickarea x=51 y=0 h=17 w=17 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1105180/amarok/amarok.theme:clickarea x=68 y=0 w=17 h=17 preview=false onclick="[ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ] && : || qdbus org.kde.amarok /Player Next" name="Next"
+./1105180/amarok/amarok.theme:clickarea x=85 y=0 w=17 h=17 onclick="qdbus org.kde.amarok /Player VolumeDown 5"
+./1105180/amarok/amarok.theme:clickarea x=102 y=0 w=17 h=17 onclick="qdbus org.kde.amarok /Player VolumeUp 5"
+./1105180/amarok/amarok.theme:text x=0 y=0  sensor=program program="artist=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 artist: | cut -c 9- | sed -e 's/.*/\U&/'`;[ `echo $artist | wc -c` -lt 60 ] && echo $artist || echo `echo $artist | cut -c -30`..." fontsize=16 font="Y2K Neophyte" align="right" interval=1000
+./1105180/amarok/amarok.theme:text x=0 y=20 sensor=program program="title=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 title: | cut -c 7- | sed -e 's/^[ \t]*//'`;[ `echo $title |  wc -c` -lt 60 ] && echo $title || echo `echo $title | cut -c -35`..." fontsize=12 font="Y2K Neophyte" align="right" interval=1000
+./1105180/amarok/amarok.theme:text x=0 y=36 sensor=program program="album=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 album: | cut -c 7- | sed -e 's/^[ \t]*//'`;[ `echo $album |  wc -c` -lt 60 ] && echo $album || echo `echo $album | cut -c -40`..." fontsize=11 align="right" font="Y2K Neophyte" interval=1000
+./1105180/amarok/amarok.theme:text x=0 y=52 sensor=program program="milTime=`qdbus org.kde.amarok /Player PositionGet`;[ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60))"  interval=1000 align="right"
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:clickarea x=40 y=690 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:clickarea x=70 y=690 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:clickarea x=100 y=690 w=17 h=17 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:clickarea x=160 y=690 h=17 w=17 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:clickarea x=130 y=690 w=17 h=17 preview=false onclick="[ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2`] && : || qdbus org.kde.amarok /Player Next" name="Next"
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:image x=60 y=715  sensor=program program="[ `qdbus org.kde.amarok /Player GetMetadata | grep arturl | cut -d : -f 2` ] && convert`qdbus org.kde.amarok /Player GetMetadata |grep arturl | cut -d : -f 3 | cut -c 3-` -resize 116x112! /tmp/img.png && echo /tmp/img.png;[ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ] && echo image/lastfm.png" interval=5000
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:#clickarea x=45 y=710 w=165 h=150 path="qdbus org.kde.amarok /amarok/MainWindow showHide"
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:#text x=110 y=660 color=255,255,255 font="Neuropol" fontsize=18 sensor=program program="artist=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 artist: | cut -c 9- | sed -e 's/.*/\U&/'`;[ `echo $artist | wc -c` -lt 24 ] && echo $artist || echo `echo $artist | cut -c -20`..." fontsize=16 font="Y2K Neophyte" align="center" interval=5000
+./1105179/Dual_cpu_Sys_Monitor_Amarok2/system_monitor.theme:text x=115 y=830 color=255,255,255 font="Neuropol" fontsize=12 sensor=program program="title=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 title: | cut -c 7- | sed -e 's/^[ \t]*//'`;[ `echo $title |  wc -c` -lt 37 ] && echo $title || echo `echo $title | cut -c -33`..." fontsize=12 align="center"interval=5000
+./1105108/albumCover.sh:path=`qdbus org.kde.amarok /Player GetMetadata | grep arturl: | cut -c9-`;
+./1105108/albumCover.sh:        convert `qdbus org.kde.amarok /Player GetMetadata | grep arturl: | cut -c9-` -resize 140x138 /tmp/img.png;
+./1105108/kembru.theme~:clickarea x=15 y=5 w=150 h=150 sensor=program onclick="qdbus org.kde.amarok /amarok/MainWindow showHide"
+./1105108/kembru.theme~:clickarea x=200 y=145 w=17 h=17 preview=false onclick="qdbus org.mpris.amarok /Player Prev" name="Previous"
+./1105108/kembru.theme~:clickarea x=225 y=145 w=17 h=17 preview=false onclick="qdbus org.mpris.amarok /Player Play" name="Play"
+./1105108/kembru.theme~:clickarea x=250 y=145 h=17 w=17 preview=false onclick="qdbus org.mpris.amarok /Player Stop" name="Stop"
+./1105108/kembru.theme~:clickarea x=275 y=145 w=17 h=17 preview=false onclick="qdbus org.mpris.amarok /Player Next" name="Next"
+./1105108/kembru.theme~:text x=165 y=5 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist | cut -c 9-" fontsize=18 interval=5000
+./1105108/kembru.theme~:text x=165 y=50 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title | cut -c 8-" fontsize=12 interval=5000
+./1105108/kembru.theme~:text x=165 y=90 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album | cut -c 8-" fontsize=12 interval=5000
+./1105108/kembru.theme~:text x=165 y=115 color=206,206,206 sensor=program program="if [ `qdbus org.mpris.amarok /Player GetMetadata | grep year | cut -c 7-` != 0 ]; then  echo `qdbus org.mpris.amarok /Player GetMetadata | grep year | cut -c 7-`; fi" interval=1083 fontsize=11
+./1105108/kembru.theme~:text x=360 y=115 color=206,206,206 sensor=program program="qdbus org.mpris.amarok /Player GetMetadata | grep genre | cut -c 8-" interval=1283 fontsize=11 align=right
+./1105108/kembru.theme:image x=15 y=12 w=155 h=153 sensor=program program="path=`qdbus org.kde.amarok /Player GetMetadata | grep arturl: | cut -c9-`; if ( test -z $path ); then convert $HOME/.kde4/share/apps/amarok/albumcovers/cache/100@nocover.png -resize 140x138 /tmp/img.png; else convert `qdbus org.kde.amarok /Player GetMetadata | grep arturl: | cut -c9-` -resize 140x138 /tmp/img.png; fi; echo /tmp/img.png;" fi;" interval=5000
+./1105108/kembru.theme:clickarea x=15 y=5 w=150 h=150 sensor=program onclick="qdbus org.kde.amarok /amarok/MainWindow showHide"
+./1105108/kembru.theme:clickarea x=200 y=145 w=17 h=17 preview=false onclick="qdbus org.mpris.amarok /Player Prev" name="Previous"
+./1105108/kembru.theme:clickarea x=225 y=145 w=17 h=17 preview=false onclick="qdbus org.mpris.amarok /Player Play" name="Play"
+./1105108/kembru.theme:clickarea x=250 y=145 h=17 w=17 preview=false onclick="qdbus org.mpris.amarok /Player Stop" name="Stop"
+./1105108/kembru.theme:clickarea x=275 y=145 w=17 h=17 preview=false onclick="qdbus org.mpris.amarok /Player Next" name="Next"
+./1105108/kembru.theme:text x=165 y=5 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist: | cut -c 9-" fontsize=18 interval=5000
+./1105108/kembru.theme:text x=165 y=50 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title: | cut -c 8-" fontsize=12 interval=5000
+./1105108/kembru.theme:text x=165 y=90 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album: | cut -c 8-" fontsize=12 interval=5000
+./1105108/kembru.theme:text x=165 y=115 color=206,206,206 sensor=program program="if [ `qdbus org.mpris.amarok /Player GetMetadata | grep year | cut -c 7-` != 0 ]; then  echo `qdbus org.mpris.amarok /Player GetMetadata | grep year | cut -c 7-`; fi" interval=1083 fontsize=11
+./1105108/kembru.theme:text x=360 y=115 color=206,206,206 sensor=program program="qdbus org.mpris.amarok /Player GetMetadata | grep genre | cut -c 8-" interval=1283 fontsize=11 align=right
+./1104854/Amarok2 Polaroid/Amarok2 Polaroid.theme:clickarea x=23 y=13 w=114 h=114 onclick="qdbus org.kde.amarok /amarok/MainWindow showHide"
+./1104854/Amarok2 Polaroid/Amarok2 Polaroid.theme:text x=0 y=0  sensor=program program="artist=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 artist: | cut -c 9- | sed -e 's/.*/\U&/'`;[ `echo $artist | wc -c` -lt 60 ] && echo $artist || echo `echo $artist | cut -c -30`..." fontsize=12 font="FakeReceipt" align="left" interval=1000
+./1104854/Amarok2 Polaroid/Amarok2 Polaroid.theme:text x=0 y=15 sensor=program program="title=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 title: | cut -c 7- | sed -e 's/^[ \t]*//'`;[ `echo $title |  wc -c` -lt 60 ] && echo $title || echo `echo $title | cut -c -35`..." fontsize=11 font="FakeReceipt" align="left" interval=1000
+./1104854/Amarok2 Polaroid/Amarok2 Polaroid.theme:text x=0 y=31 sensor=program program="album=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 album: | cut -c 7- | sed -e 's/^[ \t]*//'`;[ `echo $album |  wc -c` -lt 60 ] && echo $album || echo `echo $album | cut -c -40`..." fontsize=10 align="left" font="FakeReceipt" interval=1000
+./1104854/Amarok2 Polaroid/Amarok2 Polaroid.theme:text x=250 y=40 sensor=program program="milTime=`qdbus org.kde.amarok /Player PositionGet`;[ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60))"  interval=1000 align="left"
+./1104854/Amarok2 Polaroid/art.sh:if [ `qdbus org.kde.amarok /Player GetMetadata | grep arturl | cut -d : -f 2` ];
+./1104854/Amarok2 Polaroid/art.sh:convert "`qdbus org.kde.amarok /Player GetMetadata |grep arturl | cut -d : -f 3 | cut -c 3- | sed "s/%20/ /g"`" -resize 293x293! /tmp/cover/img.png
+./1104854/Amarok2 Polaroid/art.sh:if [ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ];
+./1104636/i-love-music-amarok-en.theme:text x=250 y=91 color=255,255,255 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:" interval=1000 fontsize=15 font="Sans Serif" align=center
+./1104636/i-love-music-amarok-en.theme:text x=250 y=111 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:" interval=1000 font="Sans Serif" fontsize=19 align=center
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:text  x=60 y=625 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=3000
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:text x=60 y=638 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=3000
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:text x=60 y=651 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=3000
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=40 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=70 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=100 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=130 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Stop"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=160 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intel_or_ati.theme:text  x=60 y=800 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:|sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intel_or_ati.theme:text x=60 y=815 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:|sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intel_or_ati.theme:text x=60 y=830 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intel_or_ati.theme:clickarea x=40 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intel_or_ati.theme:clickarea x=70 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intel_or_ati.theme:clickarea x=100 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intel_or_ati.theme:clickarea x=130 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intel_or_ati.theme:clickarea x=150 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:text  x=60 y=30 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:text x=60 y=45 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:text x=60 y=60 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:text x=60 y=75 sensor=program program="milTime=`qdbus org.kde.amarok /Player PositionGet`;totalTime=`qdbus org.kde.amarok /Player GetMetadata | grep mtime | cut -c 8-`;ttime=$( [ `expr length $((totalTime/1000 % 60))` -lt 2 ] && echo $((totalTime/60000)):0$((totalTime/1000 % 60)) || echo $((totalTime/60000)):$((totalTime/1000 %60)) );ctime=$( [ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60)) );echo $ctime / $ttime" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:clickarea x=10 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:clickarea x=40 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:clickarea x=70 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:clickarea x=100 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme:clickarea x=130 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme:#text  x=60 y=625 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme:#text x=60 y=638 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme:#text x=60 y=651 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme:#clickarea x=0 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme:#clickarea x=30 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme:#clickarea x=60 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme:#clickarea x=90 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme:#clickarea x=120 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:text  x=60 y=10 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:text x=60 y=25 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:text x=60 y=40 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:text x=60 y=55 sensor=program program="milTime=`qdbus org.kde.amarok /Player PositionGet`;totalTime=`qdbus org.kde.amarok /Player GetMetadata | grep mtime | cut -c 8-`;ttime=$( [ `expr length $((totalTime/1000 % 60))` -lt 2 ] && echo $((totalTime/60000)):0$((totalTime/1000 % 60)) || echo $((totalTime/60000)):$((totalTime/1000 %60)) );ctime=$( [ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60)) );echo $ctime / $ttime" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:clickarea x=10 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:clickarea x=40 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:clickarea x=70 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:clickarea x=100 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme~:clickarea x=130 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme~:#text  x=60 y=625 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme~:#text x=60 y=638 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme~:#text x=60 y=651 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme~:#clickarea x=0 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme~:#clickarea x=30 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme~:#clickarea x=60 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme~:#clickarea x=90 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme~:#clickarea x=120 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:text  x=60 y=10 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:text x=60 y=25 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:text x=60 y=40 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:text x=60 y=55 sensor=program program="milTime=`qdbus org.kde.amarok /Player PositionGet`;totalTime=`qdbus org.kde.amarok /Player GetMetadata | grep mtime | cut -c 8-`;ttime=$( [ `expr length $((totalTime/1000 % 60))` -lt 2 ] && echo $((totalTime/60000)):0$((totalTime/1000 % 60)) || echo $((totalTime/60000)):$((totalTime/1000 %60)) );ctime=$( [ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60)) );echo $ctime / $ttime" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:clickarea x=10 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:clickarea x=40 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:clickarea x=70 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:clickarea x=100 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok.theme:clickarea x=130 y=71 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme~:#text  x=60 y=625 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:|sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme~:#text x=60 y=638 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:|sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme~:#text x=60 y=651 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme~:#clickarea x=0 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme~:#clickarea x=30 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme~:#clickarea x=60 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme~:#clickarea x=90 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_for_nvidia.theme~:#clickarea x=120 y=85 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:text  x=60 y=30 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:text x=60 y=45 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:text x=60 y=60 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:text x=60 y=75 sensor=program program="milTime=`qdbus org.kde.amarok /Player PositionGet`;totalTime=`qdbus org.kde.amarok /Player GetMetadata | grep mtime | cut -c 8-`;ttime=$( [ `expr length $((totalTime/1000 % 60))` -lt 2 ] && echo $((totalTime/60000)):0$((totalTime/1000 % 60)) || echo $((totalTime/60000)):$((totalTime/1000 %60)) );ctime=$( [ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60)) );echo $ctime / $ttime" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:clickarea x=10 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:clickarea x=40 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:clickarea x=70 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:clickarea x=100 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/amarok_full.theme~:clickarea x=130 y=91 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intelorati.theme~:text  x=60 y=800 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intelorati.theme~:text x=60 y=815 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intelorati.theme~:text x=60 y=830 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=500
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intelorati.theme~:clickarea x=40 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intelorati.theme~:clickarea x=70 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intelorati.theme~:clickarea x=100 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intelorati.theme~:clickarea x=130 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104554/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero_mod_intelorati.theme~:clickarea x=150 y=845 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104486/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:text  x=60 y=625 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=3000
+./1104486/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:text x=60 y=638 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=3000
+./1104486/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:text x=60 y=651 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=3000
+./1104486/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=40 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104486/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=70 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Play"
+./1104486/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=100 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Pause"
+./1104486/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=130 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Stop"
+./1104486/Simple_Shadow_Monitor_by_Sero/Simple_Shadow_Monitor_by_Sero.theme:clickarea x=160 y=677 h=28 w=25 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104419/sysmon/KitSysMon.py:                    theme.write("`qdbus org.kde.amarok /Player GetMetadata | grep -m1 title: | cut -c 7- | sed -e 's/^[ \\t]*//'`;[ `echo $title |  wc -c` -lt 20 ] && echo $title || echo `echo $title | cut -c -16`...\" fontsize=12 font=\"Droid Sans Mono\" color="+args.colmain+" align=right interval=2000\n\x23\n")
+./1104419/sysmon/KitSysMon.py:                    theme.write("`qdbus org.kde.amarok /Player GetMetadata | grep -m1 artist: | cut -c 14-`;[ `echo $artist | wc -c` -lt 20 ] && echo $artist || echo `echo $artist | cut -c -16`...\" fontsize=12 font=\"Droid Sans Mono\" color="+args.colmain+" align=right interval=2000\n")
+./1104419/sysmon/KitSysMon.py:                    theme.write("`qdbus org.kde.amarok /Player GetMetadata | grep -m1 album: | cut -c 7- | sed -e 's/^[ \\t]*//'`;[ `echo $album |  wc -c` -lt 20 ] && echo $album || echo `echo $album | cut -c -18`...\" fontsize=12 font=\"Droid Sans Mono\" color="+args.colmain+" align=right interval=2000\n")
+./1104419/sysmon/KitSysMon.py:                    theme.write("`qdbus org.kde.amarok /Player PositionGet`;[ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60))\"  fontsize=12 font=\"Droid Sans Mono\" color="+args.colmain+" align=right interval=2000\n")
+./1104419/sysmon/KitSysMon.py:                    theme.write("`qdbus org.kde.amarok /Player GetMetadata | grep mtime | awk '{print $2 }'`;[ `expr length $((timeall/1000 % 60))` -lt 2 ] && echo $((timeall/60000)):0$((timeall/1000 % 60)) || echo $((timeall/60000)):$((timeall/1000 %60))\"  fontsize=12 font=\"Droid Sans Mono\" color="+args.colmain+" align=right interval=2000\n")
+./1104419/sysmon/KitSysMon.py:                        theme.write("  clickarea x=60 y=101 w=40 h=40 preview=false onclick=\"qdbus org.kde.amarok /Player Prev\" name=\"Previous\"\n")
+./1104419/sysmon/KitSysMon.py:                        theme.write("  clickarea x=105 y=91 w=60 h=60 preview=false onclick=\"qdbus org.kde.amarok /Player Play\" name=\"Play\"\n")
+./1104419/sysmon/KitSysMon.py:                        theme.write("  clickarea x=175 y=101 w=40 h=40 preview=false onclick=\"qdbus org.kde.amarok /Player Next\" name=\"Next\"\n")
+./1104419/sysmon/KitSysMon.py:                        theme.write("  clickarea x=220 y=101 w=40 h=40 preview=false onclick=\"qdbus org.kde.amarok /Player Stop\" name=\"Stop\"\n")
+./1104341/ASMA/ASMA_modified_by_Draqun.theme:text x=70 y=25 sensor=program program="artist=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 artist: | cut -c 9- | sed -e 's/.*/\U&/'`;[ `echo $artist | wc -c` -lt 16 ] && echo $artist || echo `echo $artist | cut -c -10`..." interval=2000 fontsize=14 font="Bitstream Vera Sans Mono"
+./1104341/ASMA/ASMA_modified_by_Draqun.theme:text x=65 y=65 sensor=program program="title=`qdbus org.kde.amarok /Player GetMetadata | grep -m1 title: | cut -c 7- | sed -e 's/^[ \t]*//'`;[ `echo $title |  wc -c` -lt 16 ] && echo $title || echo `echo $title | cut -c -10`..." interval=2000 fontsize=14 font="Bitstream Vera Sans Mono"
+./1104341/ASMA/ASMA_modified_by_Draqun.theme:clickarea x=30 y=5 w=25 h=20 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1104341/ASMA/ASMA_modified_by_Draqun.theme:clickarea x=60 y=5 w=25 h=20 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1104341/ASMA/ASMA_modified_by_Draqun.theme:clickarea x=90 y=5 w=25 h=20 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1104341/ASMA/ASMA_modified_by_Draqun.theme:clickarea x=120 y=5 w=20 h=20 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1104341/ASMA/ASMA_modified_by_Draqun.theme:clickarea x=150 y=5 w=25 h=20 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1104340/amarok/cover.sh:if [ `qdbus org.kde.amarok /Player GetMetadata | grep arturl | cut -d : -f 2` ];
+./1104340/amarok/cover.sh:convert "`qdbus org.kde.amarok /Player GetMetadata |grep arturl | cut -d : -f 3 | cut -c 3- | sed "s/%20/ /g"`" -resize 114x114! /tmp/img.png
+./1104340/amarok/cover.sh:if [ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ];
+./1104340/amarok/amarok.theme:clickarea x=23 y=13 w=114 h=114 onclick="qdbus org.kde.amarok /amarok/MainWindow showHide"
+./1104337/Amarok2-art/conkyrc:                ${color}CPU ${color1}${cpu cpu}% ${cpubar 6,40 cpu} ${freq cpu}MHz    ${color}Ram ${color1}$memperc% ${membar 6,40} ${mem}    ${color}Swap ${color1}${swap}/${swapmax} ${swapbar 6,40}    ${color}Home ${color1}${fs_used /home}/${fs_size /home} ${fs_bar 6,40 /home}    ${color}Network ${color1}${downspeed eth0}/ ${upspeed eth0}Kb/s   ${if_running amarok}${color}|    Amarok  ${color1}${execi 10 qdbus org.kde.amarok /Player GetMetadata | grep title:}    ${execi 10 qdbus org.kde.amarok /Player GetMetadata | grep artist:} ${execi 10 qdbus org.kde.amarok /Player GetMetadata | grep album:}                                 $endif
+./1104337/Amarok2-art/amarok2_art.sh:if [ "`qdbus org.kde.amarok /Player GetMetadata | grep arturl`" = "arturl: " ]; then
+./1104337/Amarok2-art/amarok2_art.sh:if [ "`qdbus org.kde.amarok /Player GetMetadata | grep arturl | nkf --url-input -w -w`" != "`cat /tmp/amarok2_art`" ]; then
+./1104337/Amarok2-art/amarok2_art.sh:   printf "`qdbus org.kde.amarok /Player GetMetadata | grep arturl | nkf --url-input -w -w`" > /tmp/amarok2_art
+./1104337/Amarok2-art/amarok2_art.sh:   convert "`qdbus org.kde.amarok /Player GetMetadata | grep arturl | cut -d : -f 3 | cut -c 3- | nkf --url-input -w -w`" -resize 133x131! /tmp/amarok2_art.png
+./1104337/Amarok2-art/amarok2_art.theme:#image x=17 y=6 sensor=program program="convert "`qdbus org.kde.amarok /Player GetMetadata |grep arturl | cut -d : -f 3 | cut -c 3- | nkf --url-input-w -w`" -resize 133x131! /tmp/amarok_art.png && echo /tmp/amarok_art.png" interval=10000
+./1104262/amarokUltraCover2/amarokUltraCover2/getcover.sh:data="`qdbus org.kde.amarok /Player org.freedesktop.MediaPlayer.GetMetadata`"
+./1103931/Phenom-GT-Hex-Monitor/Phenom-GT-Hex-Monitor.theme:text x=107 y=22 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=3000
+./1103931/Phenom-GT-Hex-Monitor/Phenom-GT-Hex-Monitor.theme:text x=107 y=34 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=3000
+./1103931/Phenom-GT-Hex-Monitor/Phenom-GT-Hex-Monitor.theme:text x=107 y=46 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=3000
+./1103931/Phenom-GT-Hex-Monitor/Phenom-GT-Hex-Monitor.theme:clickarea x=44 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1103931/Phenom-GT-Hex-Monitor/Phenom-GT-Hex-Monitor.theme:clickarea x=77 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1103931/Phenom-GT-Hex-Monitor/Phenom-GT-Hex-Monitor.theme:clickarea x=110 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1103931/Phenom-GT-Hex-Monitor/Phenom-GT-Hex-Monitor.theme:clickarea x=143 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1103931/Phenom-GT-Hex-Monitor/Phenom-GT-Hex-Monitor.theme:clickarea x=176 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme:#text x=107 y=22 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor/CRAPH_monitor.theme:#text x=107 y=34 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor/CRAPH_monitor.theme:#text x=107 y=46 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor/CRAPH_monitor.theme:#clickarea x=44 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme:#clickarea x=77 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme:#clickarea x=110 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme:#clickarea x=143 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme:#clickarea x=176 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme~:#text x=107 y=22 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor/CRAPH_monitor.theme~:#text x=107 y=34 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor/CRAPH_monitor.theme~:#text x=107 y=46 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor/CRAPH_monitor.theme~:#clickarea x=44 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme~:#clickarea x=77 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme~:#clickarea x=110 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme~:#clickarea x=143 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1103926/CRAPH_monitor/CRAPH_monitor.theme~:#clickarea x=176 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1103926/CRAPH_monitor_theme/CRAPH_monitor.theme:#text x=107 y=22 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep title:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor_theme/CRAPH_monitor.theme:#text x=107 y=34 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep artist:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor_theme/CRAPH_monitor.theme:#text x=107 y=46 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep album:| sed -e 's/.*: //'" interval=3000
+./1103926/CRAPH_monitor_theme/CRAPH_monitor.theme:#clickarea x=44 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Previous"
+./1103926/CRAPH_monitor_theme/CRAPH_monitor.theme:#clickarea x=77 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1103926/CRAPH_monitor_theme/CRAPH_monitor.theme:#clickarea x=110 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1103926/CRAPH_monitor_theme/CRAPH_monitor.theme:#clickarea x=143 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1103926/CRAPH_monitor_theme/CRAPH_monitor.theme:#clickarea x=176 y=62 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Next" name="Next"
+./1103760/OxygenSystemMonitor.theme:image x=10 y=660 sensor=program program="[ `qdbus org.kde.amarok /Player GetMetadata | grep arturl | cut -d : -f 2` ] && convert `qdbus org.kde.amarok /Player GetMetadata |grep arturl | cut -c 16-` -resize 60x60! /tmp/img.png && echo /tmp/img.png;[ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ] && echo image/lastfm.png" interval=5000
+./1103760/OxygenSystemMonitor.theme:    text x=40 y=15 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep 'title:' | sed -e 's/title: //g'" fontsize=11 font="Blue Highway" interval=1000
+./1103760/OxygenSystemMonitor.theme:    text x=40 y=27 sensor=program program="qdbus org.kde.amarok /Player GetMetadata | grep 'artist:' | sed -e 's/artist: //g'" fontsize=11 font="Blue Highway" interval=1000
+./1103760/OxygenSystemMonitor.theme:    text x=40 y=39 sensor=program program="milTime=`qdbus org.kde.amarok /Player PositionGet`;totalTime=`qdbus org.kde.amarok /Player GetMetadata | grep mtime | cut -c 8-`;ttime=$( [ `expr length $((totalTime/1000 % 60))` -lt 2 ] && echo $((totalTime/60000)):0$((totalTime/1000 % 60)) || echo $((totalTime/60000)):$((totalTime/1000 %60)) );ctime=$( [ `expr length $((milTime/1000 % 60))` -lt 2 ] && echo $((milTime/60000)):0$((milTime/1000 % 60)) || echo $((milTime/60000)):$((milTime/1000 %60)) );echo $ctime / $ttime" fontsize=11font="Blue Highway" interval=500
+./1103760/OxygenSystemMonitor.theme:    clickarea x=0 y=57 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Prev" name="Prev"
+./1103760/OxygenSystemMonitor.theme:    clickarea x=33 y=57 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Stop" name="Stop"
+./1103760/OxygenSystemMonitor.theme:    clickarea x=66 y=57 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Play" name="Play"
+./1103760/OxygenSystemMonitor.theme:    clickarea x=96 y=57 h=32 w=32 preview=false onclick="qdbus org.kde.amarok /Player Pause" name="Pause"
+./1103760/OxygenSystemMonitor.theme:    clickarea x=129 y=57 h=32 w=32 preview=false onclick="[ `qdbus org.kde.amarok /Player GetMetadata | grep lastfm | cut -d : -f 2` ] && : || qdbus org.kde.amarok /Player Next" name="Next"
+./1100895/contents/ui/config/ConfigGeneral.qml:                 property string command: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ExposeAll"'
+./1100895/contents/ui/config/ConfigGeneral.qml:                 property string command: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"'
+./1100895/contents/ui/config/ConfigGeneral.qml:                 property string command: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ExposeClass"'
+./1100895/contents/ui/config/ConfigGeneral.qml:                 property string upCommand:   'qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"'
+./1100895/contents/ui/config/ConfigGeneral.qml:                 property string downCommand: 'qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"'
+./1100895/contents/ui/config/ConfigGeneral.qml:                 property string upCommand:   'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch One Desktop to the Left"'
+./1100895/contents/ui/config/ConfigGeneral.qml:                 property string downCommand: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch One Desktop to the Right"'
